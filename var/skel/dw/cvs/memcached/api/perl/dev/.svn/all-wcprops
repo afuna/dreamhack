@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/memcached/!svn/ver/714/trunk/api/perl/dev
+END
+bench_noreply.pl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/memcached/!svn/ver/714/trunk/api/perl/dev/bench_noreply.pl
+END
+minibench.pl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/memcached/!svn/ver/516/trunk/api/perl/dev/minibench.pl
+END
+bench.pl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/memcached/!svn/ver/424/trunk/api/perl/dev/bench.pl
+END
+cons-hash.pl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/memcached/!svn/ver/516/trunk/api/perl/dev/cons-hash.pl
+END

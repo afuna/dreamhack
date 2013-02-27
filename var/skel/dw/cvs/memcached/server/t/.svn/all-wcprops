@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/memcached/!svn/ver/708/trunk/server/t
+END
+bogus-commands.t
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/memcached/!svn/ver/370/trunk/server/t/bogus-commands.t
+END
+00-startup.t
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/memcached/!svn/ver/534/trunk/server/t/00-startup.t
+END
+maxconns.t
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/memcached/!svn/ver/557/trunk/server/t/maxconns.t
+END
+flush-all.t
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/memcached/!svn/ver/666/trunk/server/t/flush-all.t
+END
+64bit.t
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/memcached/!svn/ver/392/trunk/server/t/64bit.t
+END
+noreply.t
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/memcached/!svn/ver/708/trunk/server/t/noreply.t
+END
+udp.t
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/memcached/!svn/ver/378/trunk/server/t/udp.t
+END
+incrdecr.t
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/memcached/!svn/ver/619/trunk/server/t/incrdecr.t
+END
+managed-buckets.t
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/memcached/!svn/ver/370/trunk/server/t/managed-buckets.t
+END
+slab-reassign.t
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/memcached/!svn/ver/370/trunk/server/t/slab-reassign.t
+END
+getset.t
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/memcached/!svn/ver/615/trunk/server/t/getset.t
+END
+flags.t
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/memcached/!svn/ver/370/trunk/server/t/flags.t
+END
+unixsocket.t
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/memcached/!svn/ver/557/trunk/server/t/unixsocket.t
+END
+whitespace.t
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/memcached/!svn/ver/557/trunk/server/t/whitespace.t
+END
+multiversioning.t
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/memcached/!svn/ver/370/trunk/server/t/multiversioning.t
+END
+stats-detail.t
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/memcached/!svn/ver/508/trunk/server/t/stats-detail.t
+END
+stats.t
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/memcached/!svn/ver/509/trunk/server/t/stats.t
+END
+stress-memcached.pl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/memcached/!svn/ver/406/trunk/server/t/stress-memcached.pl
+END
+binary-get.t
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/memcached/!svn/ver/557/trunk/server/t/binary-get.t
+END
+lru.t
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/memcached/!svn/ver/370/trunk/server/t/lru.t
+END
+expirations.t
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/memcached/!svn/ver/456/trunk/server/t/expirations.t
+END
+cas.t
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/memcached/!svn/ver/665/trunk/server/t/cas.t
+END
+delete-window.t
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/memcached/!svn/ver/370/trunk/server/t/delete-window.t
+END
+daemonize.t
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/memcached/!svn/ver/370/trunk/server/t/daemonize.t
+END

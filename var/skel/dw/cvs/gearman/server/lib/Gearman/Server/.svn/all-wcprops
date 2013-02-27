@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/gearman/!svn/ver/378/trunk/server/lib/Gearman/Server
+END
+Listener.pm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/gearman/!svn/ver/340/trunk/server/lib/Gearman/Server/Listener.pm
+END
+Job.pm
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/gearman/!svn/ver/378/trunk/server/lib/Gearman/Server/Job.pm
+END
+Client.pm
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/gearman/!svn/ver/372/trunk/server/lib/Gearman/Server/Client.pm
+END

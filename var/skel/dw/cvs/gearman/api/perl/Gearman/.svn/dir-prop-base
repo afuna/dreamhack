@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 69
+Makefile
+META.yml
+build-stamp
+install-stamp
+blib
+build.pl
+pm_to_blib
+
+END

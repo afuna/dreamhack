@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/gearman/!svn/ver/332/trunk/dev/file-send/FileSend
+END
+SCP.pm
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/gearman/!svn/ver/332/trunk/dev/file-send/FileSend/SCP.pm
+END
+Rsync.pm
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gearman/!svn/ver/332/trunk/dev/file-send/FileSend/Rsync.pm
+END

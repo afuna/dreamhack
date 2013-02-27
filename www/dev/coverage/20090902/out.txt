@@ -1,0 +1,326 @@
+t/assertions.t .................... skipped: fix this test!
+t/atom-post.t ..................... skipped: Webserver not running.
+t/betafeatures.t .................. ok
+t/birthday.t ...................... ok
+t/caps.t .......................... ok
+t/clean-event.t ................... ok
+t/cleaner-forms.t ................. ok
+t/cleaner-invalid.t ............... ok
+t/cleaner-link.t .................. ok
+t/cleaner-ljtags.t ................ ok
+t/cleaner-subject.t ............... ok
+t/cleaner-tables.t ................ ok
+t/commafy.t ....................... ok
+t/comment.t ....................... ok
+t/console-allowopenproxy.t ........ ok
+t/console-ban.t ................... ok
+t/console-changecommunityadmin.t .. ok
+t/console-changejournalstatus.t ... ok
+t/console-changejournaltype.t ..... skipped: Fix this test!
+t/console-comment.t ............... ok
+t/console-community.t ............. skipped: Fix this test!
+t/console-entry.t ................. ok
+t/console-expungeuserpic.t ........ ok
+t/console-faqcat.t ................ ok
+t/console-finduser.t .............. skipped: Fix this test!
+t/console-findusercluster.t ....... ok
+t/console-friend.t ................ skipped: Fix this test!
+t/console-getrelation.t ........... skipped: Fix this test!
+t/console-infohistory.t ........... ok
+t/console-moodthemes.t ............ skipped: Fix this test!
+t/console-print.t ................. ok
+t/console-priv.t .................. skipped: Fix this test!
+t/console-reset.t ................. ok
+t/console-set.t ................... ok
+t/console-setbadpassword.t ........ skipped: Fix this test!
+t/console-suspend.t ............... skipped: Fix this test
+t/console-syndicated.t ............ skipped: Fix this test!
+t/console-sysban.t ................ ok
+t/console-tags.t .................. skipped: Fix this test
+t/cprod.t ......................... skipped: Fix this test!
+t/dev-setup.t ..................... skipped: Fix this test!
+t/directorysearch-extra.t ......... skipped: Need LJ::UserSearch module.
+t/directorysearch.t ............... skipped: Need LJ::UserSearch module.
+t/draftset.t ...................... ok
+t/emailpost.t ..................... ok
+t/entrycomment-create.t ........... skipped: Fix this test!
+t/errors.t ........................ ok
+t/esn-duplicatesubscriptions.t .... skipped: Fix this test!
+t/esn-end2end.t ................... skipped: Fix this test!
+t/esn-findsubscription.t .......... skipped: Fix this test!
+t/esn-journalnewcomment.t ......... skipped: Fix this test!
+t/esn-journalnewentry.t ........... skipped: Fix this test!
+t/esn.t ........................... skipped: Fix this test!
+t/external-site.t ................. ok
+t/fakememcache.t .................. ok
+t/faq.t ........................... skipped: Fix this test! Is there support for Spanish?
+t/htmltrim.t ...................... ok
+t/jabber-lastseen.t ............... skipped: This test is disabled until Jabber::LastSeen is rewritten
+t/jabber-presence.t ............... ok
+t/langdatfile.t ................... ok
+t/location.t ...................... ok
+t/m-friendof.t .................... skipped: Fix this test! LJ::add_friend has been deprecated
+t/notificationinbox.t ............. skipped: Fix this test! LJ/Event/Befriended.pm is missing
+t/notificationmethod-email.t ...... skipped: Fix this test! LJ/Event/Befriended.pm is missing
+t/notificationmethod-inbox.t ...... skipped: Fix this test! LJ/Event/Befriended.pm is missing
+t/parsefeed-atom-link.t ........... ok
+t/parsefeed-atom-link2.t .......... skipped: Fix this test!
+t/parsefeed-atom-link3.t .......... ok
+t/parsefeed-atom-types.t .......... skipped: Fix this test!
+t/privs.t ......................... ok
+t/proto-post-edit-roundtrip.t ..... skipped: Fix this test!
+t/settings.t ...................... skipped: Fix this test! LJ/Setting/WebpageURL.pm is missing
+t/subscription-flags.t ............ ok
+t/subscription-pending.t .......... ok
+t/svn-mime-types.t ................ skipped: Run with env TEST_SVN_MIME set true to run this test.
+t/talklib-mail-migrate.t .......... skipped: fix this test!, cannot find phonepost.pl
+t/typemap.t ....................... ok
+t/uniqcookie.t .................... ok
+t/use-strict.t .................... skipped: This test fails too much to be run for everyone.
+t/user-infoshow-migrate.t ......... skipped: Fix this test!
+t/userloading.t ................... ok
+t/usermoves.t ..................... skipped: Less than two clusters.
+t/userpics.t ...................... ok
+t/utf8-convert.t .................. ok
+t/webreq.t ........................ skipped: Fix this test!
+All tests successful.
+Files=85, Tests=1281, 1772 wallclock secs ( 0.70 usr  0.48 sys + 1573.82 cusr 44.43 csys = 1619.43 CPU)
+Result: PASS
+cover
+Reading database from /dreamhack/home/8165-szabgab/dw/cover_db
+
+
+---------------------------- ------ ------ ------ ------ ------ ------ ------
+File                           stmt   bran   cond    sub    pod   time  total
+---------------------------- ------ ------ ------ ------ ------ ------ ------
+cgi-bin/CSS/Cleaner.pm         63.8   47.2    n/a   85.7    0.0    0.0   58.7
+cgi-bin/Cache/Memcached.pm     36.8   17.7   19.7   66.2   60.0    0.8   32.5
+...he/Memcached/GetParser.pm   42.9    0.0    0.0   75.0    0.0    0.0   36.4
+cgi-bin/DBI/Role.pm            65.8   46.3   26.0   72.2    0.0    2.4   52.0
+...e/Command/ManageCircle.pm   27.0    0.0    0.0   44.4    0.0    0.0   15.1
+...in/DW/External/Account.pm    8.2    0.0    0.0   11.6    0.0    0.0    6.1
+cgi-bin/DW/External/Site.pm    51.8    0.0    0.0   55.6    0.0    0.1   34.8
+...ernal/Site/DeadJournal.pm   33.3    0.0    0.0   33.3    0.0    0.0   19.4
+...ternal/Site/Dreamwidth.pm   40.9    0.0    0.0   37.5    0.0    0.0   21.8
+.../External/Site/Inksome.pm   40.9    0.0    0.0   37.5    0.0    0.0   21.8
+...nal/Site/InsaneJournal.pm   36.0    0.0    0.0   33.3    0.0    0.0   20.0
+...ternal/Site/JournalFen.pm   40.9    0.0    0.0   37.5    0.0    0.0   21.8
+...ernal/Site/LiveJournal.pm   40.9    0.0    0.0   37.5    0.0    0.0   21.8
+.../External/Site/Unknown.pm   40.9    0.0    0.0   37.5    0.0    0.0   23.1
+cgi-bin/DW/External/User.pm    33.3    0.0    n/a   42.9    0.0    0.0   23.1
+...External/XPostProtocol.pm   20.9    0.0    n/a   23.1    0.0    0.0   17.6
+...XPostProtocol/LJXMLRPC.pm    9.5    0.0    0.0   33.3    0.0    0.0    6.7
+...bin/DW/Hooks/Changelog.pm  100.0    n/a    n/a  100.0    n/a    0.0  100.0
+...bin/DW/Hooks/EntryForm.pm  100.0    n/a    n/a  100.0    n/a    0.0  100.0
+cgi-bin/DW/Hooks/SSL.pm       100.0    n/a    n/a  100.0    n/a    0.0  100.0
+...in/DW/Hooks/SiteScheme.pm  100.0    n/a    n/a  100.0    n/a    0.0  100.0
+cgi-bin/DW/InviteCodes.pm      11.5    0.0    0.0   18.2  100.0    0.0   17.6
+cgi-bin/DW/Logic/LogItems.pm    2.4    0.0    0.0   25.0    0.0    0.0    1.6
+...n/DW/Logic/ProfilePage.pm    1.5    0.0    0.0    6.2    0.0    0.0    1.0
+...n/DW/Logic/UserLinkBar.pm    3.3    0.0    0.0   13.3   92.3    0.0    4.6
+cgi-bin/DW/Request.pm          95.2   50.0    n/a  100.0    0.0    0.0   84.8
+...bin/DW/Request/Apache2.pm   30.9    0.0    n/a   33.3    0.0    0.0   23.7
+cgi-bin/DW/User/Edges.pm       40.8   21.9   13.2   55.6    0.0    0.2   27.9
+...r/Edges/CommMembership.pm   14.5    0.0    0.0   36.4    n/a    0.0    9.5
+.../User/Edges/WatchTrust.pm    4.3    0.0    0.0   16.7    0.0    0.0    2.3
+...dges/WatchTrust/Loader.pm    3.6    0.0    0.0   12.5    n/a    0.0    2.9
+.../WatchTrust/UserHelper.pm    5.0    0.0    0.0   12.5    0.0    0.0    3.8
+cgi-bin/Data/ObjectDriver.pm   31.6   11.1    0.0   38.1   23.1    0.1   26.2
+...bjectDriver/BaseObject.pm   30.9   13.1   17.0   41.5   98.1    1.2   33.0
+...bjectDriver/Driver/DBD.pm   75.8   66.7    n/a   52.9  100.0    0.0   73.9
+...iver/Driver/DBD/SQLite.pm   46.3   50.0    0.0   70.0   83.3    0.1   51.5
+...bjectDriver/Driver/DBI.pm   47.0   34.4   28.3   64.3   28.0    1.1   43.4
+...ta/ObjectDriver/Errors.pm  100.0    n/a    n/a  100.0    n/a    0.0  100.0
+.../ObjectDriver/Iterator.pm   33.3    0.0    0.0   33.3    0.0    0.0   23.5
+...ObjectDriver/ResultSet.pm    4.1    0.0    0.0    7.7   68.8    0.0    7.4
+.../Data/ObjectDriver/SQL.pm   48.9   23.7   22.9   68.4  100.0    0.0   43.5
+cgi-bin/Gearman/Client.pm      12.7    0.0    0.0   26.9   54.5    0.0   11.4
+cgi-bin/Gearman/JobStatus.pm   17.6    0.0    0.0   16.7    0.0    0.0    8.9
+cgi-bin/Gearman/Objects.pm    100.0    n/a    n/a  100.0    n/a    0.0  100.0
+...Gearman/ResponseParser.pm    5.0    0.0    0.0   10.0    0.0    0.0    4.0
+...ResponseParser/Taskset.pm   50.0    n/a    n/a   50.0    0.0    0.0   44.4
+cgi-bin/Gearman/Task.pm        16.7    4.7    5.7   25.0   17.6    0.0   13.2
+cgi-bin/Gearman/Taskset.pm      9.8    0.0    0.0   30.4    0.0    0.0    7.8
+cgi-bin/Gearman/Util.pm         5.0    0.0    0.0   12.5    0.0    0.0    3.2
+cgi-bin/HTMLCleaner.pm         77.2   56.2   50.0   73.3   44.4    0.1   67.2
+cgi-bin/LJ/BetaFeatures.pm     71.6   55.6    n/a   90.0    0.0    0.0   65.7
+...J/BetaFeatures/default.pm   88.6   59.1    n/a   90.0    0.0    0.0   72.6
+cgi-bin/LJ/Blob.pm             13.4    0.0    0.0   23.1    0.0    0.0    9.3
+cgi-bin/LJ/CProd.pm             4.3    0.0    0.0    8.3    0.0    0.0    2.9
+cgi-bin/LJ/CSS/Cleaner.pm     100.0    n/a    n/a  100.0    0.0    0.0   95.8
+cgi-bin/LJ/Comment.pm          36.8   21.7   13.7   48.3    0.0    1.8   29.3
+cgi-bin/LJ/Config.pm           37.2   16.7   22.2   83.3    0.0    0.1   31.4
+cgi-bin/LJ/Console.pm          81.4   46.9   76.5   94.1    0.0    0.6   78.1
+...bin/LJ/Console/Command.pm   60.5   55.0   50.0   50.0    0.0    0.1   50.0
+...Command/AllowOpenProxy.pm   88.5   78.6   33.3   66.7    0.0    0.0   70.7
+...onsole/Command/BanList.pm   90.6   75.0   72.7   66.7    0.0    0.0   74.3
+...Console/Command/BanSet.pm   90.6   64.3   50.0   66.7    0.0    0.0   69.0
+...nsole/Command/BanUnset.pm   90.0   58.3   50.0   66.7    0.0    0.0   68.3
+...d/ChangeCommunityAdmin.pm   90.6   87.5   53.3   66.7    0.0    0.0   71.4
+...nd/ChangeJournalStatus.pm   81.8   60.0   44.4   66.7    0.0    0.0   63.6
+...mand/ChangeJournalType.pm   13.3    0.0    0.0   44.4    0.0    0.0    8.6
+...onsole/Command/Comment.pm   92.3   83.3   40.0   66.7    0.0    0.0   73.7
+...sole/Command/Community.pm   34.5    0.0    0.0   44.4    0.0    0.0   16.5
+...ole/Command/EmailAlias.pm   92.9   63.6   44.4   66.7    0.0    0.0   71.6
+.../Console/Command/Entry.pm   88.5   58.3   46.7   66.7    0.0    0.0   63.2
+...Command/ExpungeUserpic.pm   83.9   50.0   50.0   66.7    0.0    0.0   65.0
+...Console/Command/FaqCat.pm   88.0   64.7   46.7   70.0    0.0    0.4   71.7
+...ommand/FindUserCluster.pm   85.7   50.0   66.7   66.7    0.0    0.0   65.3
+...nsole/Command/Finduser.pm   16.7    0.0    0.0   44.4    0.0    0.0   11.8
+.../Command/GetMaintainer.pm   47.6    0.0    0.0   44.4    0.0    0.0   31.8
+...e/Command/GetModerator.pm   47.6    0.0    0.0   44.4    0.0    0.0   31.8
+...le/Command/GetRelation.pm   34.5    0.0    0.0   40.0    0.0    0.0   22.6
+...J/Console/Command/Help.pm   76.0    0.0    n/a   86.5    0.0    0.1   70.1
+...le/Command/Infohistory.pm   90.0   62.5   50.0   66.7    0.0    0.0   68.9
+...Command/InvalidCommand.pm   37.0    n/a    n/a   33.3    0.0    0.0   29.2
+...le/Command/MakeInvites.pm   48.5    0.0    0.0   54.5    0.0    0.0   28.9
+...ommand/MoodthemeCreate.pm   43.5    0.0    0.0   44.4    0.0    0.0   29.2
+.../Command/MoodthemeList.pm   23.8    0.0    n/a   40.0    0.0    0.0   20.3
+...ommand/MoodthemePublic.pm   37.0    0.0    0.0   44.4    0.0    0.0   23.0
+...ommand/MoodthemeSetpic.pm   27.8    0.0    0.0   44.4    0.0    0.0   20.3
+.../Console/Command/Print.pm   86.4  100.0    n/a   70.0    0.0    0.0   68.3
+...J/Console/Command/Priv.pm   14.1    0.0    0.0   44.4    0.0    0.0    9.1
+...le/Command/PrivPackage.pm   14.1    0.0    0.0   44.4    0.0    0.0    8.8
+...ole/Command/ResetEmail.pm   90.6   50.0   41.7   66.7    0.0    0.0   64.8
+.../Command/ResetPassword.pm   91.2   50.0   44.4   66.7    0.0    0.0   67.6
+...LJ/Console/Command/Set.pm   90.3   71.4   55.6   66.7    0.0    0.0   71.0
+...Command/SetBadpassword.pm   25.6    0.0    0.0   44.4    0.0    0.0   14.1
+...onsole/Command/Suspend.pm   16.1    0.0    0.0   44.4    0.0    0.0   11.7
+...onsole/Command/SynEdit.pm   32.3    0.0    0.0   44.4    0.0    0.0   21.5
+...nsole/Command/SynMerge.pm   21.7    0.0    0.0   44.4    0.0    0.0   13.9
+...sole/Command/SysbanAdd.pm   88.5   70.0   50.0   66.7    0.0    0.0   66.2
+...ole/Command/TagDisplay.pm   33.3    0.0    0.0   44.4    0.0    0.0   22.6
+...Command/TagPermissions.pm   23.3    0.0    0.0   40.0    0.0    0.0   15.7
+...sole/Command/Unsuspend.pm   16.4    0.0    0.0   44.4    0.0    0.0   12.0
+...in/LJ/Console/Response.pm   58.1   14.3    n/a   60.0    0.0    0.0   41.3
+cgi-bin/LJ/Constants.pm       100.0    n/a    n/a  100.0    n/a    0.1  100.0
+cgi-bin/LJ/ConvUTF8.pm         76.2   50.0    n/a   75.0    0.0    0.0   65.7
+...J/Directory/Constraint.pm   44.0    0.0    0.0   61.5    0.0    0.0   36.0
+...rectory/Constraint/Age.pm   50.0    0.0    0.0   50.0    0.0    0.0   32.8
+...ry/Constraint/Interest.pm   27.3    0.0    0.0   40.0    0.0    0.0   18.2
+...Constraint/JournalType.pm   51.7    0.0    0.0   50.0    0.0    0.0   39.2
+...ry/Constraint/Location.pm   29.0    0.0    0.0   42.9    0.0    0.0   20.0
+...ry/Constraint/MemberOf.pm   42.9    0.0    0.0   44.4    0.0    0.0   28.6
+...ectory/Constraint/Test.pm   57.1    0.0    0.0   57.1    0.0    0.0   45.7
+...y/Constraint/TrustedBy.pm   42.9    0.0    0.0   44.4    0.0    0.0   28.6
+...tory/Constraint/Trusts.pm   42.9    0.0    0.0   44.4    0.0    0.0   28.6
+.../Constraint/UpdateTime.pm   51.7    0.0    0.0   50.0    0.0    0.0   36.4
+...y/Constraint/WatchedBy.pm   42.9    0.0    0.0   44.4    0.0    0.0   28.6
+...ory/Constraint/Watches.pm   42.9    0.0    0.0   44.4    0.0    0.0   28.6
+.../Directory/MajorRegion.pm   29.2   10.0    0.0   36.4    0.0    0.0   16.9
+...ctory/PackedUserRecord.pm   42.9    0.0    0.0   50.0    0.0    0.0   26.7
+...n/LJ/Directory/Results.pm   12.3    0.0    0.0   23.1    0.0    0.0    9.5
+...in/LJ/Directory/Search.pm   23.8    0.0    0.0   43.5    0.0    0.0   18.2
+...LJ/Directory/SetHandle.pm   30.8    0.0    n/a   28.6    0.0    0.0   24.6
+...irectory/SetHandle/Age.pm   60.0    n/a    n/a   50.0    0.0    0.0   50.0
+...ctory/SetHandle/Inline.pm   28.6    0.0    n/a   28.6    0.0    0.0   22.9
+.../SetHandle/JournalType.pm   50.0    0.0    n/a   50.0    0.0    0.0   40.0
+.../SetHandle/MajorRegion.pm   40.0    0.0    0.0   50.0    0.0    0.0   30.8
+...ctory/SetHandle/Mogile.pm   12.7    0.0    0.0   27.3    0.0    0.0   10.2
+...y/SetHandle/UpdateTime.pm   60.0    n/a    n/a   50.0    0.0    0.0   50.0
+cgi-bin/LJ/EmbedModule.pm      26.8   10.6   15.6   53.8    0.0    0.1   19.6
+cgi-bin/LJ/Entry.pm            29.6   17.6    9.8   29.2    0.0    0.9   22.8
+cgi-bin/LJ/Error.pm            47.0   50.0   40.7   50.0    0.0    0.0   43.1
+cgi-bin/LJ/Event.pm            45.7   18.8    7.1   56.9    0.0    0.2   37.1
+...LJ/Event/AddedToCircle.pm   15.6    0.0    0.0   21.1    0.0    0.0   10.0
+cgi-bin/LJ/Event/Birthday.pm   17.3    0.0    0.0   16.7    0.0    0.0   12.1
+.../Event/CommunityInvite.pm   19.7    0.0    n/a   20.0    0.0    0.0   15.0
+...t/CommunityJoinApprove.pm   25.7    0.0    0.0   25.0    0.0    0.0   17.9
+...nt/CommunityJoinReject.pm   26.5    0.0    0.0   25.0    0.0    0.0   18.2
+...t/CommunityJoinRequest.pm   19.0    0.0    n/a   19.0    0.0    0.0   14.4
+.../LJ/Event/ImportStatus.pm   15.8    0.0    0.0   26.7    0.0    0.0   10.3
+...ent/InvitedFriendJoins.pm   18.0    0.0    0.0   18.8    0.0    0.0   12.6
+...vent/JournalNewComment.pm    7.2    0.7    1.5   23.1    0.0    0.0    5.2
+.../Event/JournalNewEntry.pm   11.7    1.1    3.3   25.0    0.0    0.0    8.2
+...in/LJ/Event/NewUserpic.pm   22.4    5.0    0.0   31.2    0.0    0.0   16.2
+.../LJ/Event/OfficialPost.pm   20.3    0.0    0.0   22.2    0.0    0.0   14.8
+cgi-bin/LJ/Event/PollVote.pm   18.2    0.0    0.0   20.0    0.0    0.0   12.6
+...vent/RemovedFromCircle.pm   15.8    0.0    0.0   20.0    0.0    0.0   10.5
+...curityAttributeChanged.pm    7.8    0.0    0.0   15.8    0.0    0.0    5.7
+.../LJ/Event/UserExpunged.pm   21.4    0.0    n/a   25.0    0.0    0.0   18.5
+...Event/UserMessageRecvd.pm   11.3    0.0    0.0   21.7    0.0    0.0    9.1
+.../Event/UserMessageSent.pm   15.6    0.0    0.0   27.8    0.0    0.0   13.3
+...J/Event/UserNewComment.pm   75.0   25.0   33.3   66.7    0.0    0.0   59.1
+.../LJ/Event/UserNewEntry.pm   34.6    6.2    6.7   35.3    0.0    0.0   23.2
+.../LJ/Event/XPostFailure.pm   17.9    0.0    0.0   19.0    0.0    0.0   11.9
+.../LJ/Event/XPostSuccess.pm   16.1    0.0    n/a   16.7    0.0    0.0   11.0
+cgi-bin/LJ/EventLogRecord.pm   47.7   12.5    0.0   50.0    0.0    0.0   38.7
+...ogRecord/DeleteComment.pm   92.3   50.0    n/a   80.0    0.0    0.0   77.3
+...ntLogRecord/NewComment.pm   92.3   83.3    n/a   80.0    0.0    0.0   80.8
+...ventLogRecord/NewEntry.pm   87.5   50.0    n/a   80.0    0.0    0.0   74.1
+cgi-bin/LJ/ExternalSite.pm     72.0   37.5    n/a   62.5    0.0    0.0   56.5
+...in/LJ/ExternalSite/Vox.pm   94.1  100.0  100.0   83.3    0.0    0.0   83.3
+cgi-bin/LJ/Faq.pm               2.8    0.0    0.0    7.7    0.0    0.0    1.9
+cgi-bin/LJ/Hooks/PingBack.pm   90.0   50.0    n/a  100.0    0.0    0.0   77.8
+...bin/LJ/Jabber/LastSeen.pm   18.1    0.0    n/a   35.7  100.0    0.0   20.1
+...bin/LJ/Jabber/Presence.pm   72.5   46.3   42.9   82.9   77.3    1.0   65.3
+cgi-bin/LJ/LangDatFile.pm      89.3   71.9   66.7   85.7    0.0    0.1   77.9
+cgi-bin/LJ/Location.pm         58.1   62.5   12.5   50.0    0.0    0.0   50.9
+cgi-bin/LJ/M/FriendsOf.pm       5.6    0.0    0.0   15.4    0.0    0.0    4.3
+cgi-bin/LJ/MemCache.pm         87.2   58.8   35.7   76.9    n/a    0.7   75.0
+cgi-bin/LJ/MemCacheable.pm     32.4    0.0    0.0   50.0    n/a    0.0   28.1
+cgi-bin/LJ/Message.pm           2.7    0.0    0.0    8.3    0.0    0.0    2.3
+cgi-bin/LJ/ModuleCheck.pm      68.8   33.3    n/a   80.0    0.0    0.0   58.6
+cgi-bin/LJ/ModuleLoader.pm    100.0   40.9    n/a  100.0    0.0    0.5   93.2
+.../LJ/NotificationMethod.pm   50.0   25.0   33.3   35.0    0.0    0.0   34.0
+...tificationMethod/Inbox.pm   27.9    0.0    n/a   33.3    0.0    0.0   19.3
+cgi-bin/LJ/PingBack.pm         11.5    0.0    0.0   40.0    0.0    0.0    7.2
+cgi-bin/LJ/Poll.pm              2.6    0.0    0.0   12.7    0.0    0.0    1.8
+cgi-bin/LJ/Session.pm           5.1    1.3    0.0   12.2    0.0    0.0    3.7
+cgi-bin/LJ/Setting.pm          11.8    0.0    0.0   15.6    0.0    0.0    8.5
+cgi-bin/LJ/Setting/Gender.pm   32.1    0.0    0.0   37.5    0.0    0.0   21.4
+cgi-bin/LJ/Subscription.pm     58.4   34.5   20.7   50.0    0.0    0.2   42.1
+...J/Subscription/Pending.pm   77.4   42.4   45.9   62.5    0.0    0.0   56.7
+cgi-bin/LJ/Test.pm             85.1   55.4   47.4   75.9    0.0    1.7   73.7
+cgi-bin/LJ/Typemap.pm          98.8   62.9   66.7  100.0    n/a    0.5   83.4
+cgi-bin/LJ/UniqCookie.pm       73.2   42.4   22.2   82.8    0.0    2.7   58.2
+cgi-bin/LJ/User.pm             29.6   19.9   16.9   37.7    n/a   65.1   25.4
+cgi-bin/LJ/Userpic.pm          54.6   42.3   26.7   45.2    0.0    0.2   45.4
+cgi-bin/TheSchwartz.pm         37.0   17.7   10.3   45.6   61.5    0.3   32.5
+cgi-bin/TheSchwartz/Error.pm  100.0    n/a    n/a  100.0    n/a    0.0  100.0
+...TheSchwartz/ExitStatus.pm  100.0    n/a    n/a  100.0    n/a    0.0  100.0
+...in/TheSchwartz/FuncMap.pm   95.0   33.3    n/a  100.0    0.0    0.0   80.6
+cgi-bin/TheSchwartz/Job.pm     27.5   19.6    8.7   42.3  100.0    0.3   30.5
+.../TheSchwartz/JobHandle.pm   32.4    0.0    n/a   33.3    0.0    0.0   24.6
+...bin/TheSchwartz/Worker.pm   28.1    0.0    n/a   33.3  100.0    0.0   35.3
+cgi-bin/XML/Atom.pm            60.0   16.7    n/a   60.0    n/a    0.0   54.9
+cgi-bin/XML/Atom/Client.pm     24.4    0.0    0.0   40.6   62.5    0.0   23.9
+cgi-bin/XML/Atom/Content.pm    18.2    0.0    0.0   35.3    0.0    0.0   14.0
+cgi-bin/XML/Atom/Entry.pm      77.8    0.0    0.0   77.8   50.0    0.0   67.4
+.../XML/Atom/ErrorHandler.pm   42.9    0.0    0.0   40.0    0.0    0.0   26.7
+cgi-bin/XML/Atom/Feed.pm       17.6    0.0    0.0   33.3   22.2    0.0   15.4
+cgi-bin/XML/Atom/Link.pm       30.0    0.0    n/a   37.5    0.0    0.0   24.7
+cgi-bin/XML/Atom/Person.pm     27.7    0.0    n/a   37.5    0.0    0.0   24.0
+cgi-bin/XML/Atom/Thing.pm      12.8    0.0    0.0   30.0    0.0    0.0    9.8
+cgi-bin/XML/Atom/Util.pm       26.8    0.0    0.0   35.7   22.2    0.0   19.1
+cgi-bin/cleanhtml.pl           53.1   49.5   55.2   30.3    n/a    0.4   51.8
+cgi-bin/communitylib.pl         2.4    0.0    0.0   10.0    n/a    0.0    1.6
+cgi-bin/emailcheck.pl          54.2   50.0   33.3   50.0    n/a    0.0   50.0
+cgi-bin/htmlcontrols.pl         1.8    0.0    0.0    9.1    n/a    0.0    1.2
+cgi-bin/ljcapabilities.pl      29.1   30.6   35.1   30.8    n/a    0.1   30.7
+cgi-bin/ljdb.pl                43.9   25.8   29.0   64.3    n/a    2.2   38.4
+cgi-bin/ljdefaults.pl         100.0    n/a    n/a  100.0    n/a    0.0  100.0
+...bin/ljemailgateway-web.pl  100.0   62.5    n/a  100.0    n/a    0.0   92.7
+cgi-bin/ljemailgateway.pl      44.1   24.5   27.8   77.8    n/a    0.0   36.1
+cgi-bin/ljfeed.pl               3.1    0.4    0.0   30.0    n/a    0.0    2.8
+cgi-bin/ljhooks.pl             60.4   87.5    n/a   53.3    n/a    0.4   64.3
+cgi-bin/ljlang.pl              46.5   26.4   11.5   31.1    n/a    1.2   34.7
+cgi-bin/ljlib-local.pl        100.0    n/a    n/a  100.0    n/a    0.0  100.0
+cgi-bin/ljlib.pl               37.3   19.0   20.1   54.5    n/a    3.0   30.9
+cgi-bin/ljmail.pl              65.3   32.3   21.9  100.0    n/a    0.0   52.0
+cgi-bin/ljmood.pl               6.5    1.8    0.0   22.2    n/a    0.0    5.3
+cgi-bin/ljprotocol.pl          17.0   11.6   13.3   26.9    n/a    0.5   15.0
+cgi-bin/ljrelation.pl          44.8   30.0   23.0   60.0    n/a    0.0   36.8
+cgi-bin/ljtextutil.pl          39.6   31.5   40.0   44.8    n/a    0.5   38.1
+cgi-bin/ljtimeutil.pl          38.1   32.6   50.0   42.9    n/a    0.2   37.3
+cgi-bin/ljuserpics.pl          24.7   21.4   12.7   41.7    n/a    0.3   22.1
+cgi-bin/parsefeed.pl           63.5   49.3   43.5   76.5    n/a    0.1   57.0
+cgi-bin/sysban.pl              25.3   15.7    9.3   35.0    n/a    4.9   21.0
+cgi-bin/taglib.pl              31.4   15.1   15.3   35.5    n/a    0.2   23.7
+cgi-bin/talklib.pl             24.9   13.2    9.3   48.0    0.0    1.4   19.3
+Total                          31.6   17.1   14.4   43.4   13.5  100.0   26.2
+---------------------------- ------ ------ ------ ------ ------ ------ ------
+
+
+Writing HTML output to /dreamhack/home/8165-szabgab/dw/cover_db/coverage.html ...
+done.

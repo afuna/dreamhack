@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gearman/!svn/ver/332/trunk/dev/file-send
+END
+send.pl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/gearman/!svn/ver/332/trunk/dev/file-send/send.pl
+END
+FileSend.pm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/gearman/!svn/ver/332/trunk/dev/file-send/FileSend.pm
+END
+send-worker.pl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/gearman/!svn/ver/332/trunk/dev/file-send/send-worker.pl
+END

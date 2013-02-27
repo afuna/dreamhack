@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/memcached/!svn/ver/156/trunk/api/java/com/danga/MemCached
+END
+MemCachedClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/memcached/!svn/ver/156/trunk/api/java/com/danga/MemCached/MemCachedClient.java
+END
+SockIO.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/memcached/!svn/ver/156/trunk/api/java/com/danga/MemCached/SockIO.java
+END

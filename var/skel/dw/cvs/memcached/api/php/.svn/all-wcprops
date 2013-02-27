@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/memcached/!svn/ver/114/trunk/api/php
+END
+MemCachedClient.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/memcached/!svn/ver/114/trunk/api/php/MemCachedClient.inc.php
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/memcached/!svn/ver/114/trunk/api/php/ChangeLog
+END
+Documentation
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/memcached/!svn/ver/114/trunk/api/php/Documentation
+END
+dist.pl
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/memcached/!svn/ver/107/trunk/api/php/dist.pl
+END

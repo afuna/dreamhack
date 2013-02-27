@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/ddlockd/!svn/ver/43/trunk/server
+END
+ddlockd
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ddlockd/!svn/ver/42/trunk/server/ddlockd
+END
+DDLockd.spec
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ddlockd/!svn/ver/43/trunk/server/DDLockd.spec
+END

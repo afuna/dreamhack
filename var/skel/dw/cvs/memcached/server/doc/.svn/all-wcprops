@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/memcached/!svn/ver/747/trunk/server/doc
+END
+protocol.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/memcached/!svn/ver/747/trunk/server/doc/protocol.txt
+END
+memory_management.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/memcached/!svn/ver/724/trunk/server/doc/memory_management.txt
+END
+Doxyfile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/memcached/!svn/ver/596/trunk/server/doc/Doxyfile
+END
+memcached.1
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/memcached/!svn/ver/742/trunk/server/doc/memcached.1
+END
+threads.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/memcached/!svn/ver/508/trunk/server/doc/threads.txt
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/memcached/!svn/ver/257/trunk/server/doc/Makefile.am
+END
+binary-protocol-plan.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/memcached/!svn/ver/599/trunk/server/doc/binary-protocol-plan.txt
+END
+CONTRIBUTORS
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/memcached/!svn/ver/523/trunk/server/doc/CONTRIBUTORS
+END

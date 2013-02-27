@@ -1,0 +1,40 @@
+page<=
+{Fps}<html>
+<head>
+   <title>memcached: %%wintitle%%</title>
+   <link rel='stylesheet' type='text/css' href='memcached.css' />
+</head>
+<body>
+
+<h1>memcached</h1>
+<div class='linkbar'>
+<?link ./|About link?>
+<?link news.bml|News link?>
+<?link download.bml|Download link?>
+<?link apis.bml|Client APIs link?>
+<?link users.bml|Users link?>
+<?link http://code.google.com/p/memcached/wiki/Start|FAQ / Wiki link?>
+<?link http://groups.google.com/group/memcached|Mailing List link?>
+</div>
+
+%%body%%
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4841723-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>
+<=page
+
+h1=>{D}<h2>%%data%%</h2>
+
+memd=>{S}<tt class='mem'>memcached</tt>
+
+link=>{RP}[<a href="%%data1%%" class='barlink'>%%data2%%</a>] 

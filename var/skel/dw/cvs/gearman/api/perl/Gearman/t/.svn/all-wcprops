@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/gearman/!svn/ver/376/trunk/api/perl/Gearman/t
+END
+40-prefix.t
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gearman/!svn/ver/376/trunk/api/perl/Gearman/t/40-prefix.t
+END
+worker.pl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/gearman/!svn/ver/376/trunk/api/perl/Gearman/t/worker.pl
+END
+TestGearman.pm
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gearman/!svn/ver/238/trunk/api/perl/Gearman/t/TestGearman.pm
+END
+60-stop-if.t
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gearman/!svn/ver/358/trunk/api/perl/Gearman/t/60-stop-if.t
+END
+10-all.t
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/gearman/!svn/ver/376/trunk/api/perl/Gearman/t/10-all.t
+END
+00-use.t
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/gearman/!svn/ver/91/trunk/api/perl/Gearman/t/00-use.t
+END
+51-large_args.t
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/gearman/!svn/ver/336/trunk/api/perl/Gearman/t/51-large_args.t
+END
+30-maxqueue.t
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/gearman/!svn/ver/354/trunk/api/perl/Gearman/t/30-maxqueue.t
+END
+20-leaktest.t
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/gearman/!svn/ver/254/trunk/api/perl/Gearman/t/20-leaktest.t
+END
+50-wait_timeout.t
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gearman/!svn/ver/212/trunk/api/perl/Gearman/t/50-wait_timeout.t
+END

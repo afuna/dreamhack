@@ -1,0 +1,5 @@
+home/[0-9]*
+lib/dreamhacks-db.pl
+lib/dreamhacks-db-readonly.pl
+var/maintain.d/
+

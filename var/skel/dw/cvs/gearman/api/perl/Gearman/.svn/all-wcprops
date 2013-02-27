@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gearman/!svn/ver/381/trunk/api/perl/Gearman
+END
+Gearman-Client.spec
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gearman/!svn/ver/368/trunk/api/perl/Gearman/Gearman-Client.spec
+END
+HACKING
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/gearman/!svn/ver/95/trunk/api/perl/Gearman/HACKING
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/gearman/!svn/ver/121/trunk/api/perl/Gearman/TODO
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/gearman/!svn/ver/336/trunk/api/perl/Gearman/MANIFEST
+END
+Makefile.PL
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/gearman/!svn/ver/121/trunk/api/perl/Gearman/Makefile.PL
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/gearman/!svn/ver/357/trunk/api/perl/Gearman/CHANGES
+END
+MANIFEST.SKIP
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gearman/!svn/ver/267/trunk/api/perl/Gearman/MANIFEST.SKIP
+END
+.shipit
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/gearman/!svn/ver/240/trunk/api/perl/Gearman/.shipit
+END

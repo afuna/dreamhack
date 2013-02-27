@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/memcached/!svn/ver/303/trunk/api/perl/lib/Cache/Memcached
+END
+GetParser.pm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/memcached/!svn/ver/303/trunk/api/perl/lib/Cache/Memcached/GetParser.pm
+END

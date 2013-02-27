@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/memcached/!svn/ver/814/trunk/api/perl
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/memcached/!svn/ver/173/trunk/api/perl/TODO
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/memcached/!svn/ver/809/trunk/api/perl/MANIFEST
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/memcached/!svn/ver/814/trunk/api/perl/ChangeLog
+END
+Makefile.PL
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/memcached/!svn/ver/267/trunk/api/perl/Makefile.PL
+END
+MANIFEST.SKIP
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/memcached/!svn/ver/516/trunk/api/perl/MANIFEST.SKIP
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/memcached/!svn/ver/167/trunk/api/perl/README
+END
+.shipit
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/memcached/!svn/ver/517/trunk/api/perl/.shipit
+END

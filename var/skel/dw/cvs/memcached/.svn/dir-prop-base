@@ -1,0 +1,10 @@
+K 17
+post-commit-email
+V 63
+memcached-commits@lists.danga.com, cvs-commits@livejournal.com
+
+K 9
+svk:merge
+V 47
+789fd3da-c10f-0410-83af-492cf8184178:/local:265
+END

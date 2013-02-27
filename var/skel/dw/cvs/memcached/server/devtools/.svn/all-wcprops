@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/memcached/!svn/ver/708/trunk/server/devtools
+END
+bench_noreply.pl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/memcached/!svn/ver/708/trunk/server/devtools/bench_noreply.pl
+END
+svn-tarballs.pl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/memcached/!svn/ver/323/trunk/server/devtools/svn-tarballs.pl
+END
+clean-whitespace.pl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/memcached/!svn/ver/491/trunk/server/devtools/clean-whitespace.pl
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gearman/!svn/ver/351/trunk/server/debian
+END
+control
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/gearman/!svn/ver/351/trunk/server/debian/control
+END
+compat
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/gearman/!svn/ver/351/trunk/server/debian/compat
+END
+gearmand.install
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gearman/!svn/ver/351/trunk/server/debian/gearmand.install
+END
+changelog
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/gearman/!svn/ver/351/trunk/server/debian/changelog
+END
+libgearman-server-perl.install
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/gearman/!svn/ver/351/trunk/server/debian/libgearman-server-perl.install
+END
+rules
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/gearman/!svn/ver/351/trunk/server/debian/rules
+END

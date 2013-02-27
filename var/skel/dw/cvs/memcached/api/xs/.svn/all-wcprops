@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/memcached/!svn/ver/548/trunk/api/xs
+END
+memtest.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/memcached/!svn/ver/541/trunk/api/xs/memtest.sh
+END
+memtest.pl
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/memcached/!svn/ver/539/trunk/api/xs/memtest.pl
+END
+xs-requirements.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/memcached/!svn/ver/433/trunk/api/xs/xs-requirements.txt
+END

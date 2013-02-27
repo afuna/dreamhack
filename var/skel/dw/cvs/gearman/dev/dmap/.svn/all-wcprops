@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/gearman/!svn/ver/332/trunk/dev/dmap
+END
+dmap-worker.pl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/gearman/!svn/ver/332/trunk/dev/dmap/dmap-worker.pl
+END
+dmap.pl
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gearman/!svn/ver/332/trunk/dev/dmap/dmap.pl
+END
+DMap.pm
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gearman/!svn/ver/332/trunk/dev/dmap/DMap.pm
+END

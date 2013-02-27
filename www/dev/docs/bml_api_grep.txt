@@ -1,0 +1,729 @@
+cgi-bin/LJ/S2.pm:    # rather than relying on BML::set_language's fallback mechanism, which won't
+cgi-bin/LJ/S2.pm:    # work in this context since BML::cur_req won't be loaded if no BML requests
+cgi-bin/LJ/S2.pm:    BML::set_language($lang, \&LJ::Lang::get_text);
+cgi-bin/LJ/S2.pm:            my $r = eval { BML::get_request() };
+cgi-bin/LJ/S2.pm:    my $r = BML::get_request();
+cgi-bin/LJ/S2.pm:    my $r = BML::get_request();
+cgi-bin/LJ/S2.pm:    my $r = BML::get_request();
+cgi-bin/LJ/S2.pm:    my $r = BML::get_request();
+cgi-bin/LJ/S2.pm:    my $r = BML::get_request();
+cgi-bin/LJ/NotificationMethod/IM.pm:sub title { BML::ml('notification_method.im.title') }
+cgi-bin/LJ/NotificationMethod/Inbox.pm:sub title { BML::ml('notification_method.inbox.title') }
+cgi-bin/LJ/NotificationMethod/Email.pm:sub title { BML::ml('notification_method.email.title') }
+cgi-bin/LJ/Error.pm:    if (my $r = eval {BML::get_request()}) {
+cgi-bin/LJ/PageStats.pm:    return BML::get_request();
+cgi-bin/LJ/User.pm:    eval { BML::get_request()->notes->{ljuser} = $u->user; };
+cgi-bin/LJ/User.pm:    BML::set_language($bl->{'lncode'}) if $bl;
+cgi-bin/LJ/User.pm:    BML::set_scheme($u->prop('schemepref'))
+cgi-bin/LJ/User.pm:    return BML::redirect( $ru->journal_base . $uri );
+cgi-bin/LJ/User.pm:    eval { BML::set_scheme( undef ); };
+cgi-bin/LJ/User.pm:            $uniq = BML::get_request()->notes->{uniq};
+cgi-bin/LJ/User.pm:    my $r = eval { BML::get_request(); };
+cgi-bin/LJ/User.pm:        #       error messages (probably via BML::ML hash, or something)
+cgi-bin/LJ/User.pm:        return $notice->( BML::ml( 'error.vhost.nodomain', { user_domain => $LJ::USER_DOMAIN } ) );
+cgi-bin/LJ/User.pm:        return $notice->( BML::ml( 'error.vhost.noalias' ) );
+cgi-bin/LJ/User.pm:        return $notice->( BML::ml( 'error.vhost.nostyle' ) );
+cgi-bin/LJ/User.pm:        return $notice->( BML::ml( 'error.vhost.nocomm' ) );
+cgi-bin/LJ/User.pm:            return BML::ml('cprod.friendsfriendsinline.text3.v1');
+cgi-bin/LJ/User.pm:        return $error->( BML::ml( 'error.tag.disabled' ), "404 Not Found", BML::ml( 'error.tag.name' ) )
+cgi-bin/LJ/User.pm:        return $error->( BML::ml( 'error.tag.s1' ), "404 Not Found", BML::ml( 'error.tag.name' ) )
+cgi-bin/LJ/User.pm:        return $error->( BML::ml( 'error.tag.invalid' ), "404 Not Found", BML::ml( 'error.tag.name' ) )
+cgi-bin/LJ/User.pm:            return $error->( BML::ml( 'error.tag.undef' ), "404 Not Found", BML::ml( 'error.tag.name' ) )
+cgi-bin/LJ/User.pm:            my $warning = BML::ml( 'error.suspended.text', { user => $u->ljuser_display, sitename => $LJ::SITENAME } );
+cgi-bin/LJ/User.pm:            return $error->( $warning, "403 Forbidden", BML::ml( 'error.suspended.name' ) );
+cgi-bin/LJ/User.pm:            my $warning = BML::ml( 'error.suspended.entry', { aopts => "href='$journal_base/'" } );
+cgi-bin/LJ/User.pm:            return $error->( $warning, "403 Forbidden", BML::ml( 'error.suspended.name' ) );
+cgi-bin/LJ/User.pm:    return $error->( BML::ml( 'error.purged.text' ), "410 Gone", BML::ml( 'error.purged.name' ) ) if $u->is_expunged;
+cgi-bin/LJ/User.pm:        my $warning = BML::ml( 'error.nojournal.openid', { aopts => "href='$location'", id => $location } );
+cgi-bin/LJ/CProd/ControlStrip.pm:    return "<p>".BML::ml($class->get_ml($version), { "link" => $link }) . "</p>";
+cgi-bin/LJ/CProd/Polls.pm:    return BML::ml($class->get_ml($version), { "user" => $user, "link" => $link, "poll" => $poll });
+cgi-bin/LJ/CProd/Feeds.pm:    return "<p>$icon " . BML::ml($class->get_ml($version), { "user" => $user,
+cgi-bin/LJ/CProd/FriendsFriends.pm:    return "$icon ".BML::ml($class->get_ml($version), { "user" => $user, "link" => $link });
+cgi-bin/LJ/CProd/Birthdays.pm:    return "<p>$icon ". BML::ml($class->get_ml($version), { "user" => $user,
+cgi-bin/LJ/CProd/UserPic.pm:    return BML::ml($ml_key, { "user" => $user,
+cgi-bin/LJ/Message.pm:        push @$errors, BML::ml('error.message.individual', { 'ljuser' => $ru->ljuser_display });
+cgi-bin/LJ/Message.pm:                ? BML::ml('error.message.deleted', { 'ljuser' => $ru->ljuser_display })
+cgi-bin/LJ/Message.pm:                : BML::ml('error.message.expunged', { 'ljuser' => $ru->ljuser_display });
+cgi-bin/LJ/Message.pm:        push @$errors, BML::ml('error.message.canreceive', { 'ljuser' => $ru->ljuser_display });
+cgi-bin/LJ/URI.pm:    $r->push_handlers(PerlHandler => \&Apache::BML::handler);
+cgi-bin/LJ/Talk.pm:        return { 'error' => BML::ml('talk.error.nosuchjournal')} unless $ju;
+cgi-bin/LJ/Talk.pm:        return { 'error' => BML::ml('talk.error.purged')} if $ju->is_expunged;
+cgi-bin/LJ/Talk.pm:        return { 'error' => BML::ml('talk.error.noentry') };
+cgi-bin/LJ/Talk.pm:    my $r = BML::get_request();
+cgi-bin/LJ/Talk.pm:    BML::set_language_scope('/talkpost.bml');
+cgi-bin/LJ/Talk.pm:            BML::ml( ".opt.loggedin", { username => "<strong>$logged_in</strong>" } );
+cgi-bin/LJ/Talk.pm:            BML::ml( ".opt.bannedfrom", { journal => $journalu->user } );
+cgi-bin/LJ/Talk.pm:    $ret .= "<tr><td align='right' valign='top'>$BML::ML{'.opt.from'}</td>";
+cgi-bin/LJ/Talk.pm:            $ret .= BML::ml( ".opt.loggedin", { username => "<strong>$logged_in</strong>" } ) . "</label>\n";
+cgi-bin/LJ/Talk.pm:            $ret .= "<td align='left'><span class='disabled'><strong>$BML::ML{'.opt.anonymous'}</strong></span> $BML::ML{'.opt.noanonpost.nonpublic'}</td>";
+cgi-bin/LJ/Talk.pm:            $ret .= "<td align='left'><b><label for='talkpostfromanon'>$BML::ML{'.opt.anonymous'}</label></b>";
+cgi-bin/LJ/Talk.pm:            $ret .= " " . $BML::ML{'.opt.willscreen'} if $screening;
+cgi-bin/LJ/Talk.pm:                $ret .= "</td><td align='left'><b><label for='talkpostfromoid' onclick='handleRadios(4);return false;'>$BML::ML{'.opt.openid.loggedin'}</label></b> ";
+cgi-bin/LJ/Talk.pm:                $ret .= $BML::ML{'.opt.willscreen'} if $screening eq 'A' || ( $screening eq 'R' && !$remote->is_validated )
+cgi-bin/LJ/Talk.pm:                $ret .= "</td><td align='left'><b><label for='talkpostfromoidlo' onclick='handleRadios(3);return false;'>$BML::ML{'.opt.openid'}</label></b> ";
+cgi-bin/LJ/Talk.pm:                    $ret .= $BML::ML{'.opt.willscreenfriend'};
+cgi-bin/LJ/Talk.pm:                    $ret .= $BML::ML{'.opt.willscreen'};
+cgi-bin/LJ/Talk.pm:                    $ret .= $BML::ML{'.opt.willscreenopenid'};
+cgi-bin/LJ/Talk.pm:            $ret .= "$BML::ML{'.login.url'}&nbsp;<input class='textbox' name='oidurl' maxlength='60' size='53' id='oidurl' value='$url_def' /> ";
+cgi-bin/LJ/Talk.pm:            $ret .= "<br /><label for='oidlogincheck'>$BML::ML{'.loginq'}&nbsp;</label><input type='checkbox' name='oiddo_login' id='oidlogincheck' ";
+cgi-bin/LJ/Talk.pm:        $ret .= "<td align='left'><span class='disabled'><strong>$BML::ML{'.opt.anonymous'}</strong></span> $BML::ML{'.opt.noanonpost'}</td>";
+cgi-bin/LJ/Talk.pm:                    $ret .= "</td><td align='left'><b><label for='talkpostfromoid' onclick='handleRadios(4);return false;'>$BML::ML{'.opt.openid.loggedin'}</label></b> ";
+cgi-bin/LJ/Talk.pm:                    $ret .= $BML::ML{'.opt.willscreen'} if $screening;
+cgi-bin/LJ/Talk.pm:                $ret .= "<td align='left'><span class='disabled'><strong>$BML::ML{'.opt.openid'}</strong></span>" . " " . BML::ml('.opt.openidsignin2', { 'aopts' => "href='$LJ::SITEROOT/openid'" });
+cgi-bin/LJ/Talk.pm:                $ret .= BML::ml('.opt.noopenidpost', { aopts1 => "href='$LJ::SITEROOT/changeemail'", aopts2 => "href='$LJ::SITEROOT/register'" })
+cgi-bin/LJ/Talk.pm:        $ret .= "<td align='left' colspan='2'><span class='disabled'><strong>$BML::ML{'.opt.anonymous'}</strong></span>";
+cgi-bin/LJ/Talk.pm:        $ret .= " " . BML::ml($stringname, {'username'=>"<b>$journalu->{'user'}</b>"});
+cgi-bin/LJ/Talk.pm:                    $ret .= "</td><td align='left'><b><label for='talkpostfromoid' onclick='handleRadios(4);return false;'>$BML::ML{'.opt.openid.loggedin'}</label></b> ";
+cgi-bin/LJ/Talk.pm:                    $ret .= "<td align='center'>( )</td><td align='left'><span class='disabled'><strong>$BML::ML{'.opt.openid.loggedin'}</strong></span>&nbsp;";
+cgi-bin/LJ/Talk.pm:                    $ret .= "&nbsp;- " . BML::ml( "$SC.error.$msg",
+cgi-bin/LJ/Talk.pm:                $ret .= $BML::ML{'.opt.willscreen'} if $screening eq 'A';
+cgi-bin/LJ/Talk.pm:                $ret .= "</td><td align='left'><b><label for='talkpostfromoidlo' onclick='handleRadios(3);return false;'>$BML::ML{'.opt.openid'}</label></b> ";
+cgi-bin/LJ/Talk.pm:                    $ret .= $BML::ML{'.opt.willscreenfriend'};
+cgi-bin/LJ/Talk.pm:                    $ret .= $BML::ML{'.opt.willscreen'};
+cgi-bin/LJ/Talk.pm:                    $ret .= $BML::ML{'.opt.willscreenopenid'};
+cgi-bin/LJ/Talk.pm:            $ret .= "$BML::ML{'.login.url'}&nbsp;<input class='textbox' name='oidurl' maxlength='60' size='53' id='oidurl' value='$url_def' /> ";
+cgi-bin/LJ/Talk.pm:            $ret .= "<br /><label for='oidlogincheck'>$BML::ML{'.loginq'}&nbsp;</label><input type='checkbox' name='oiddo_login' id='oidlogincheck' ";
+cgi-bin/LJ/Talk.pm:                $ret .= BML::ml( ".opt.loggedin", { username => "<strong>$logged_in</strong>" } );
+cgi-bin/LJ/Talk.pm:                $ret .= BML::ml( ".opt.loggedin", { username => "</span><strong>$logged_in</strong>" } );
+cgi-bin/LJ/Talk.pm:                $ret .= "&nbsp;- " . BML::ml( "$SC.error.$msg",
+cgi-bin/LJ/Talk.pm:                $ret .= " " . $BML::ML{'.opt.willscreen'};
+cgi-bin/LJ/Talk.pm:    $ret .= BML::ml( '.opt.siteuser', { sitename => $LJ::SITENAMESHORT } ) . "</label></b> ";
+cgi-bin/LJ/Talk.pm:    $ret .= $BML::ML{'.opt.willscreenfriend'} if $screening eq 'F';
+cgi-bin/LJ/Talk.pm:    $ret .= $BML::ML{'.opt.willscreen'} if $screening eq 'A';
+cgi-bin/LJ/Talk.pm:            $ljuser_def = BML::eall( $userpost );
+cgi-bin/LJ/Talk.pm:    $ret .= "$BML::ML{'Username'}:</td><td>";
+cgi-bin/LJ/Talk.pm:    $ret .= "$BML::ML{'Password'}:</td><td>";
+cgi-bin/LJ/Talk.pm:    $ret .= "<label for='logincheck'>$BML::ML{'.loginq'}&nbsp;</label><input type='checkbox' name='do_login' id='logincheck' /></td></tr></table>";
+cgi-bin/LJ/Talk.pm:        $ret .= BML::ml('.noaccount', {'aopts' => "href='$LJ::SITEROOT/create'"});
+cgi-bin/LJ/Talk.pm:    $basesubject = BML::eall($basesubject) if $basesubject;
+cgi-bin/LJ/Talk.pm:    $ret .= "<tr valign='top'><td align='right'>$BML::ML{'.opt.subject'}</td><td><input class='textbox' type='text' size='50' maxlength='100' name='subject' id='subject' value=\"$basesubject\" onKeyPress='subjectNoHTML(event);'/>\n";
+cgi-bin/LJ/Talk.pm:    $ret .= "<div id='ljnohtmlsubj' class='ljdeem'><span style='font-size: 8pt; font-style: italic;'>$BML::ML{'.nosubjecthtml'}</span></div>\n";
+cgi-bin/LJ/Talk.pm:    $ret .= "<label for='prop_opt_preformatted'>$BML::ML{'.opt.noautoformat'}</label>";
+cgi-bin/LJ/Talk.pm:    $ret .= "<tr valign='top'><td align='right'>$BML::ML{'.opt.message'}";
+cgi-bin/LJ/Talk.pm:        $ret .= "<label for='unscreen_parent'>$BML::ML{'.opt.unscreenparent'}</label>";
+cgi-bin/LJ/Talk.pm:        $ret .= "<tr valign='top'><td align='right'>$BML::ML{'.opt.editreason'}</td><td><input class='textbox' type='text' size='75' maxlength='255' name='editreason' id='editreason' value=\"$editreason\" onKeyPress='editNoHTML(event);' />\n";
+cgi-bin/LJ/Talk.pm:        $ret .= "<div id='nohtmledit' class='ljdeem'><span style='font-size: 8pt; font-style: italic;'>$BML::ML{'.noedithtml'}</span></div>\n";
+cgi-bin/LJ/Talk.pm:    <input type='submit' name='submitpreview' onclick='return checkLength() && sendForm("postform", "username")' value="$BML::ML{'talk.btn.preview'}" />
+cgi-bin/LJ/Talk.pm:        $ret .= "<input type='checkbox' name='do_spellcheck' value='1' id='spellcheck' /> <label for='spellcheck'>$BML::ML{'talk.spellcheck'}</label>";
+cgi-bin/LJ/Talk.pm:        $ret .= "<br />$BML::ML{'.logyourip'}";
+cgi-bin/LJ/Talk.pm:        $ret .= "<br />$BML::ML{'.loganonip'}";
+cgi-bin/LJ/Talk.pm:        $ret .= "<br />$BML::ML{'.linkstripped'}";
+cgi-bin/LJ/Talk.pm:        $ret .= BML::ml( '/talkpost.bml.label.picturetouse2', {
+cgi-bin/LJ/Talk.pm:                "", $BML::ML{'/talkpost.bml.opt.defpic'},
+cgi-bin/LJ/Talk.pm:        $ret .= "<input type='button' class='ljhidden' id='randomicon' value='" . BML::ml('/talkpost.bml.userpic.random2') . "'/>" ;
+cgi-bin/LJ/Talk.pm:            my $ip = BML::get_remote_ip();
+cgi-bin/LJ/Talk.pm:            my $forwarded = BML::get_client_header('X-Forwarded-For');
+cgi-bin/LJ/Talk.pm:            return BML::redirect($check_url);
+cgi-bin/LJ/Talk.pm:    $ret .= "<?h2 $BML::ML{'/talkpost_do.bml.preview.title'} h2?><?p $BML::ML{'/talkpost_do.bml.preview'} p?><?hr?>";
+cgi-bin/LJ/Talk.pm:    $ret .= "$BML::ML{'/talkpost_do.bml.preview.subject'} " . LJ::ehtml($cleansubject) . "<hr />\n";
+cgi-bin/LJ/Talk.pm:    $ret .= "<label for='subject'>$BML::ML{'/talkpost_do.bml.preview.edit.subject'}</label>";
+cgi-bin/LJ/Talk.pm:    $ret .= "<label for='body'>$BML::ML{'/talkpost_do.bml.preview.edit.body'}</label>";
+cgi-bin/LJ/Talk.pm:        $ret .= "<label for='editreason'>$BML::ML{'/talkpost_do.bml.preview.edit.editreason'}</label>";
+cgi-bin/LJ/Talk.pm:    $ret .= "<br /><input type='submit' value='$BML::ML{'/talkpost_do.bml.preview.submit'}' />\n";
+cgi-bin/LJ/Talk.pm:    $ret .= "<input type='submit' name='submitpreview' value='$BML::ML{'talk.btn.preview'}' />\n";
+cgi-bin/LJ/Talk.pm:        $ret .= "<input type='checkbox' name='do_spellcheck' value='1' id='spellcheck' /> <label for='spellcheck'>$BML::ML{'talk.spellcheck'}</label>";
+cgi-bin/LJ/Talk.pm:    $ret .= "$BML::ML{'/talkpost.bml.opt.noautoformat'} ".
+cgi-bin/LJ/Talk.pm:    $ret .= "<p> <?de $BML::ML{'/talkpost.bml.allowedhtml'}: ";
+cgi-bin/LJ/Talk.pm:        $ret .= "<?hr?><?h2 $BML::ML{'/talkpost_do.bml.preview.context'} h2?>";
+cgi-bin/LJ/Talk.pm:                $ret .= BML::ml( '/talkpost_do.bml.preview.entry.journal',
+cgi-bin/LJ/Talk.pm:            $ret .= BML::fill_template( "securityprivate" );
+cgi-bin/LJ/Talk.pm:            $ret .= BML::fill_template( "securityprotected" );
+cgi-bin/LJ/Talk.pm:    $ret .= "<div align=\"center\"><b>(<a href=\"$talkurl\">$BML::ML{'talk.commentsread'}</a>)</b></div>";
+cgi-bin/LJ/CProd.pm:    my $versioned_link_text = BML::ml($ml_key . ".v$version");
+cgi-bin/LJ/CProd.pm:    my $text = $versioned_link_text || BML::ml($ml_key);
+cgi-bin/LJ/CProd.pm:    my $versioned_link_text = BML::ml($ml_key . ".v$version");
+cgi-bin/LJ/CProd.pm:    my $text = $versioned_link_text || BML::ml($ml_key);
+cgi-bin/LJ/CProd.pm:        my $ml_str = BML::ml($ml_key);
+cgi-bin/LJ/CProd.pm:    my $cprod_title = BML::ml('cprod.box.title');
+cgi-bin/LJ/CProd.pm:    my $cprod_next = BML::ml('cprod.box.nextlink');
+cgi-bin/LJ/CProd.pm:    my $cprod_all = BML::ml('cprod.box.alllink');
+cgi-bin/LJ/Userpic.pm:        return $err->($BML::ML{'error.nodb'}) unless $dbcm;
+cgi-bin/LJ/Userpic.pm:    return BML::ml("/editicons.bml.error.toomanykeywords", {
+cgi-bin/LJ/Userpic.pm:    return BML::ml('/editicons.bml.error.filetoolarge',
+cgi-bin/LJ/Userpic.pm:                         BML::ml('/editicons.bml.kilobytes')} );
+cgi-bin/LJ/Userpic.pm:    return BML::ml('/editicons.bml.error.imagetoolarge', {
+cgi-bin/LJ/Userpic.pm:    return BML::ml("/editicons.bml.error.unsupportedtype",
+cgi-bin/LJ/Userpic.pm:    return BML::ml("/editicons.bml.error.rename.mismatchedlength",
+cgi-bin/LJ/Userpic.pm:    return BML::ml("/editicons.bml.error.rename.blankkw",
+cgi-bin/LJ/Userpic.pm:    return BML::ml("/editicons.bml.error.rename.keywordexists",
+cgi-bin/LJ/Userpic.pm:    return BML::ml("/editicons.bml.error.rename.keywords",
+cgi-bin/LJ/Protocol.pm:    my $r = eval { BML::get_request() };
+cgi-bin/LJ/Protocol.pm:    BML::set_language('en'); # FIXME
+cgi-bin/LJ/Protocol.pm:            my $r = BML::get_request();
+cgi-bin/LJ/Protocol.pm:        my $r = eval { BML::get_request() };
+cgi-bin/LJ/Protocol.pm:    my $r = eval { BML::get_request() };
+cgi-bin/LJ/Widget.pm:        push @$errorsref, BML::ml('error.invalidform');
+cgi-bin/LJ/Widget.pm:    return BML::decl_params(@_);
+cgi-bin/LJ/Widget.pm:# -- it's really just a wrapper around LJ::Lang::ml or BML::ml,
+cgi-bin/LJ/Widget.pm:Wrapper around BML::decl_params().
+cgi-bin/LJ/Event/NewUserpic.pm:        BML::ml('event.userpic_upload.user',
+cgi-bin/LJ/Event/NewUserpic.pm:        BML::ml('event.userpic_upload.me');
+cgi-bin/LJ/Event/UserMessageRecvd.pm:        BML::ml('event.user_message_recvd.me') :
+cgi-bin/LJ/Event/UserMessageRecvd.pm:        BML::ml('event.user_message_recvd.user', { user => $journal->ljuser_display } );
+cgi-bin/LJ/Event/JournalNewComment.pm:        return BML::ml($key . '.friend');
+cgi-bin/LJ/Event/JournalNewComment.pm:        return BML::ml($key, { user => $user });
+cgi-bin/LJ/Event/JournalNewComment.pm:    return BML::ml($key . '.deleted', { user => $user }) unless $entry && $entry->valid;
+cgi-bin/LJ/Event/JournalNewComment.pm:    return BML::ml($key,
+cgi-bin/LJ/Event/JournalNewComment.pm:    return BML::ml($key,
+cgi-bin/LJ/Event/PollVote.pm:        BML::ml('event.poll_vote.id') : # "Someone votes in poll #$pollid";
+cgi-bin/LJ/Event/PollVote.pm:        BML::ml('event.poll_vote.me');  # "Someone votes in a poll I posted" unless $pollid;
+cgi-bin/LJ/Event/UserExpunged.pm:    return BML::ml('event.user_expunged', { user => $ljuser }); # "$ljuser has been purged";
+cgi-bin/LJ/Event/JournalNewEntry.pm:        return BML::ml('event.journal_new_entry.tag.' . ($journal->is_comm ? 'community' : 'user'),
+cgi-bin/LJ/Event/JournalNewEntry.pm:            return BML::ml( 'event.journal_new_entry.poster',
+cgi-bin/LJ/Event/JournalNewEntry.pm:    return BML::ml('event.journal_new_entry.friendlist') unless $journal;
+cgi-bin/LJ/Event/JournalNewEntry.pm:    return BML::ml('event.journal_new_entry.' . ($journal->is_comm ? 'community' : 'user'),
+cgi-bin/LJ/Event/InvitedFriendJoins.pm:    return BML::ml('event.invited_friend_joins'); # "Someone I invited creates a new journal";
+cgi-bin/LJ/Event/OfficialPost.pm:    return BML::ml('event.officialpost', { sitename => $LJ::SITENAME }); # $LJ::SITENAME makes a new announcement
+cgi-bin/LJ/Event/CommunityInvite.pm:    return BML::ml('event.comm_invite'); # "I receive an invitation to join a community";
+cgi-bin/LJ/Event/AddedToCircle.pm:        return BML::ml( 'event.addedtocircle.me' );   # "Someone adds me to their circle";
+cgi-bin/LJ/Event/AddedToCircle.pm:        return BML::ml( 'event.addedtocircle.user', { user => $user } ); # "Someone adds $user to their circle";
+cgi-bin/LJ/Event/VgiftApproved.pm:    return BML::ml( 'event.vgift.notfound' )
+cgi-bin/LJ/Event/VgiftApproved.pm:    return BML::ml( "event.vgift.approved.content.$yn",
+cgi-bin/LJ/Event/VgiftApproved.pm:    $ret .= BML::ml( 'event.vgift.approved.actions',
+cgi-bin/LJ/Event/VgiftApproved.pm:    return BML::ml( 'event.vgift.notfound' )
+cgi-bin/LJ/Event/VgiftApproved.pm:    $ret .= BML::ml( "event.vgift.approved.msg.$yn",
+cgi-bin/LJ/Event/VgiftApproved.pm:        my $mltext = BML::ml( 'event.vgift.approved.reason',
+cgi-bin/LJ/Event/Birthday.pm:    return BML::ml('event.birthday.me') # "One of the people on my access or subscription lists has an upcoming birthday"
+cgi-bin/LJ/Event/Birthday.pm:    return BML::ml('event.birthday.user', { user => $ljuser } ); # "$ljuser\'s birthday is coming up";
+cgi-bin/LJ/Event/RemovedFromCircle.pm:        return BML::ml( 'event.removedfromcircle.me' );   # "Someone removes me from their circle";
+cgi-bin/LJ/Event/RemovedFromCircle.pm:        return BML::ml( 'event.removedfromcircle.user', { user => $user } ); # "Someone removes $user from their circle";
+cgi-bin/LJ/Event/CommunityJoinRequest.pm:    return BML::ml('event.community_join_requst'); # Someone requests membership in a community I maintain';
+cgi-bin/LJ/Lang.pm:        $lang = BML::get_language();
+cgi-bin/LJ/Lang.pm:        # this means we should use BML::ml and not do our own handling
+cgi-bin/LJ/Lang.pm:        my $text = BML::ml($code, $vars);
+cgi-bin/LJ/Lang.pm:        my $namethislang = BML::ml($item);
+cgi-bin/LJ/Lang.pm:    BML::set_language($l->{lncode});
+cgi-bin/LJ/Lang.pm:# in the S2 styles code.  To use this code you must use the BML::ml function and pass
+cgi-bin/LJ/S2/FriendsPage.pm:    my $collapsed = BML::ml( 'widget.cuttag.collapsed' );
+cgi-bin/LJ/S2/FriendsPage.pm:    my $expanded = BML::ml( 'widget.cuttag.expanded' );
+cgi-bin/LJ/S2/FriendsPage.pm:    my $collapseAll = BML::ml( 'widget.cuttag.collapseAll' );
+cgi-bin/LJ/S2/FriendsPage.pm:    my $expandAll = BML::ml( 'widget.cuttag.expandAll' );
+cgi-bin/LJ/S2/FriendsPage.pm:        my $uniq = BML::get_request()->notes->{uniq};
+cgi-bin/LJ/S2/RecentPage.pm:    my $collapsed = BML::ml( 'widget.cuttag.collapsed' );
+cgi-bin/LJ/S2/RecentPage.pm:    my $expanded = BML::ml( 'widget.cuttag.expanded' );
+cgi-bin/LJ/S2/RecentPage.pm:    my $collapseAll = BML::ml( 'widget.cuttag.collapseAll' );
+cgi-bin/LJ/S2/RecentPage.pm:    my $expandAll = BML::ml( 'widget.cuttag.expandAll' );
+cgi-bin/LJ/S2/DayPage.pm:    my $collapsed = BML::ml( 'widget.cuttag.collapsed' );
+cgi-bin/LJ/S2/DayPage.pm:    my $expanded = BML::ml( 'widget.cuttag.expanded' );
+cgi-bin/LJ/S2/DayPage.pm:    my $collapseAll = BML::ml( 'widget.cuttag.collapseAll' );
+cgi-bin/LJ/S2/DayPage.pm:    my $expandAll = BML::ml( 'widget.cuttag.expandAll' );
+cgi-bin/LJ/Sysban.pm:    eval { BML::http_response(200, $msg); };
+cgi-bin/LJ/Session.pm:    my $r = BML::get_request();
+cgi-bin/LJ/Comment.pm:    my $new_ip = BML::get_remote_ip();
+cgi-bin/LJ/Comment.pm:    my $forwarded = BML::get_client_header('X-Forwarded-For');
+cgi-bin/LJ/Config.pm:                    if eval { BML::get_request() };
+cgi-bin/LJ/UniqCookie.pm:# These methods require web context, they deal with BML::get_request() and cookies
+cgi-bin/LJ/UniqCookie.pm:    my $r = BML::get_request();
+cgi-bin/LJ/UniqCookie.pm:    my $r = BML::get_request();
+cgi-bin/LJ/Global/BMLInit.pm:    BML::register_isocode(substr($_, 0, 2), $_);
+cgi-bin/LJ/Global/BMLInit.pm:    BML::register_language($_);
+cgi-bin/LJ/Global/BMLInit.pm:BML::set_config( "CookieDomain" => $LJ::COOKIE_DOMAIN );
+cgi-bin/LJ/Global/BMLInit.pm:BML::set_config( "CookiePath"   => "/" );
+cgi-bin/LJ/Global/BMLInit.pm:BML::register_hook("startup", sub {
+cgi-bin/LJ/Global/BMLInit.pm:    my $r = BML::get_request();
+cgi-bin/LJ/Global/BMLInit.pm:BML::register_hook("codeerror", sub {
+cgi-bin/LJ/Global/BMLInit.pm:    BML::set_config("DefaultContentType", "text/html; charset=utf-8");
+cgi-bin/LJ/Global/BMLInit.pm:BML::register_hook("ml_getter", \&LJ::Lang::get_text);
+cgi-bin/LJ/Global/BMLInit.pm:BML::register_hook('include_getter', sub {
+cgi-bin/LJ/Global/BMLInit.pm:BML::register_hook('default_scheme_override', sub {
+cgi-bin/LJ/Global/BMLInit.pm:BML::register_hook("codeblock_init_perl", sub {
+cgi-bin/LJ/Poll.pm:            class='LJ_PollClearLink' id='LJ_PollClearLink_${pollid}' lj_pollid='$pollid'>  " . BML::ml('poll.clear') ."</a> ]";
+cgi-bin/LJ/Poll.pm:                $results_table .= "<br />" . BML::ml('poll.useranswer', { "answer" => $preval{$qid} } );
+cgi-bin/LJ/Customize.pm:            push @themes, { 'moodthemeid' => 0, 'name' => "--- " . BML::ml('/modify_do.bml.moodicons.personal'). " ---", disabled => 1 };
+cgi-bin/LJ/Web.pm:    my $button = $opts->{button} || $BML::ML{'web.authas.btn'};
+cgi-bin/LJ/Web.pm:    $label ||= $BML::ML{"web.authas.label$comm"};
+cgi-bin/LJ/Web.pm:    my $label  = $opts->{label}  || $BML::ML{'web.postto.label'};
+cgi-bin/LJ/Web.pm:    my $button = $opts->{button} || $BML::ML{'web.postto.btn'};
+cgi-bin/LJ/Web.pm:    $ret .= BML::ml('error.procrequest');
+cgi-bin/LJ/Web.pm:    $ret .= BML::ml('label.warning');
+cgi-bin/LJ/Web.pm:    return (BML::get_method() eq "POST");
+cgi-bin/LJ/Web.pm:Drop-in replacement for BML::paging in non-BML context.
+cgi-bin/LJ/Web.pm:        # replaces BML::page_newurl
+cgi-bin/LJ/Web.pm:            $ret .= "<td width='1%' style='font-size: smaller' valign='top'>" . BML::ml( 'search.user.name' );
+cgi-bin/LJ/Web.pm:            $ret .= "<td width='1%' style='font-size: smaller' valign='top'>" . BML::ml( 'search.user.journal' );
+cgi-bin/LJ/Web.pm:#              If not supplied, will be retrieved with BML::get_client_header.
+cgi-bin/LJ/Web.pm:    my $referer = shift(@_) || BML::get_client_header('Referer');
+cgi-bin/LJ/Web.pm:    $qrhtml .= "<td align='right'><b>".BML::ml('/talkpost.bml.opt.from')."</b></td><td align='left'>";
+cgi-bin/LJ/Web.pm:            $qrhtml .= BML::ml('/talkpost.bml.label.picturetouse2',
+cgi-bin/LJ/Web.pm:                                       ("", BML::ml('/talkpost.bml.opt.defpic'), map { ($_, $_) } @pics));
+cgi-bin/LJ/Web.pm:            $qrhtml .= "<input type='button' $onclick id='randomicon' value='" . BML::ml('/talkpost.bml.userpic.random2') . "' />";
+cgi-bin/LJ/Web.pm:    $qrhtml .= "<b>".BML::ml('/talkpost.bml.opt.subject')."</b></td>";
+cgi-bin/LJ/Web.pm:    $qrhtml .= "<td align='right'><b>".BML::ml('/talkpost.bml.opt.message')."</b></td>";
+cgi-bin/LJ/Web.pm:    $qrhtml .= LJ::html_submit('submitpost', BML::ml('/talkread.bml.button.post'),
+cgi-bin/LJ/Web.pm:    $qrhtml .="&nbsp;" . LJ::html_submit('submitpview', BML::ml('talk.btn.preview'),
+cgi-bin/LJ/Web.pm:    $qrhtml .= "&nbsp;" . LJ::html_submit('submitmoreopts', BML::ml('/talkread.bml.button.more'),
+cgi-bin/LJ/Web.pm:        $qrhtml .= BML::ml('/talkread.bml.qr.spellcheck');
+cgi-bin/LJ/Web.pm:        $qrhtml .= LJ::deemp(BML::ml('/talkpost.bml.logyourip'));
+cgi-bin/LJ/Web.pm:        $qrhtml .= LJ::deemp( BML::ml( '/talkpost.bml.linkstripped' ) );
+cgi-bin/LJ/Web.pm:    my $rte_is_supported = LJ::is_enabled('rte_support', BML::get_client_header("User-Agent"));
+cgi-bin/LJ/Web.pm:                $out .= "<label for='usejournal' class='left'>" . BML::ml('entryform.postto') . "</label>\n";
+cgi-bin/LJ/Web.pm:                my $submitprefix = BML::ml('entryform.update3');
+cgi-bin/LJ/Web.pm:                $out .= "<label for='usejournal' class='left'>" . BML::ml('entryform.postto') . "</label>\n";
+cgi-bin/LJ/Web.pm:            $out .= "<label for='modifydate' class='left'>" . BML::ml('entryform.date') . "</label>\n";
+cgi-bin/LJ/Web.pm:            $out .= "<span id='currentdate' class='float-left'><span id='currentdate-date'>$monthlong $mday, $year, $hour" . ":" . "$min</span> <a href='javascript:void(0)' onclick='editdate();' id='currentdate-edit'>" . BML::ml('entryform.date.edit') . "</a></span>\n";
+cgi-bin/LJ/Web.pm:            $out .= "<span id='modifydate'>$datetime <?de " . BML::ml('entryform.date.24hournote') . " de?><br />\n";
+cgi-bin/LJ/Web.pm:            $out .= "<label for='prop_opt_backdated' class='right'>" . BML::ml('entryform.backdated3') . "</label>\n";
+cgi-bin/LJ/Web.pm:            $out .= "<noscript><p id='time-correct' class='small'>" . BML::ml('entryform.nojstime.note') . "</p></noscript>\n";
+cgi-bin/LJ/Web.pm:        $out .= "<label class='left' for='subject'>" . BML::ml('entryform.subject') . "</label>\n";
+cgi-bin/LJ/Web.pm:        $out .= "<li id='jrich'>" . BML::ml("entryform.htmlokay.rich4", { 'opts' => 'href="javascript:void(0);" onclick="return useRichText(\'draft\', \'' . $LJ::WSTATPREFIX. '\');"' })  . "</li>\n" if $rte_is_supported;
+cgi-bin/LJ/Web.pm:        $out .= "<li id='jplain' class='on'>" . BML::ml("entryform.plainswitch2", { 'aopts' => 'href="javascript:void(0);" onclick="return usePlainText(\'draft\');"' }) . "</li>\n";
+cgi-bin/LJ/Web.pm:        $out .= "<div id='spellcheck-results'><strong>" . BML::ml('entryform.spellchecked') . "</strong><br />$opts->{'spellcheck_html'}</div>\n"
+cgi-bin/LJ/Web.pm:        . BML::ml('fckland.ljimage') . "'>" . BML::ml('entryform.insert.image2') . "</a></li>\n";
+cgi-bin/LJ/Web.pm:            <label for='event_format'>" . BML::ml('entryform.format3') . "</label>" . LJ::help_icon_html("noautoformat", "", " ") . "</span>\n";
+cgi-bin/LJ/Web.pm:        my $jnorich = LJ::ejs(LJ::deemp(BML::ml('entryform.htmlokay.norich2')));
+cgi-bin/LJ/Web.pm:    $out .= "FCKLang.UserPrompt = \"".LJ::ejs(BML::ml('fcklang.userprompt'))."\";\n";
+cgi-bin/LJ/Web.pm:    $out .= "FCKLang.UserPrompt_User = \"".LJ::ejs(BML::ml('fcklang.userprompt.user'))."\";\n";
+cgi-bin/LJ/Web.pm:    $out .= "FCKLang.UserPrompt_Site = \"".LJ::ejs(BML::ml('fcklang.userprompt.site'))."\";\n";
+cgi-bin/LJ/Web.pm:    $out .= "FCKLang.InvalidChars = \"".LJ::ejs(BML::ml('fcklang.invalidchars'))."\";\n";
+cgi-bin/LJ/Web.pm:    $out .= "FCKLang.LJUser = \"".LJ::ejs(BML::ml('fcklang.ljuser'))."\";\n";
+cgi-bin/LJ/Web.pm:    $out .= "FCKLang.VideoPrompt = \"".LJ::ejs(BML::ml('fcklang.videoprompt'))."\";\n";
+cgi-bin/LJ/Web.pm:    $out .= "FCKLang.LJVideo = \"".LJ::ejs(BML::ml('fcklang.ljvideo2'))."\";\n";
+cgi-bin/LJ/Web.pm:    $out .= "FCKLang.CutPrompt = \"".LJ::ejs(BML::ml('fcklang.cutprompt'))."\";\n";
+cgi-bin/LJ/Web.pm:    $out .= "FCKLang.ReadMore = \"".LJ::ejs(BML::ml('fcklang.readmore'))."\";\n";
+cgi-bin/LJ/Web.pm:    $out .= "FCKLang.CutContents = \"".LJ::ejs(BML::ml('fcklang.cutcontents'))."\";\n";
+cgi-bin/LJ/Web.pm:    $out .= "FCKLang.LJCut = \"".LJ::ejs(BML::ml('fcklang.ljcut'))."\";\n";
+cgi-bin/LJ/Web.pm:                                          BML::ml("entryform.htmlokay.rich2", { 'opts' => 'href="javascript:void(0);" onclick="return useRichText(\'draft\', \'' . LJ::ejs($LJ::WSTATPREFIX) . '\');"' })));
+cgi-bin/LJ/Web.pm:                                           BML::ml("entryform.plainswitch", { 'aopts' => 'href="javascript:void(0);" onclick="return usePlainText(\'draft\');"' })));
+cgi-bin/LJ/Web.pm:        $out .= '<noscript><?de ' . BML::ml('entryform.htmlokay.norich2') . ' de?><br /></noscript>';
+cgi-bin/LJ/Web.pm:                $out .= "<label for='prop_taglist' class='left options'>" . BML::ml('entryform.tags') . "</label>";
+cgi-bin/LJ/Web.pm:            $out .= "<label for='prop_current_moodid' class='left options'>" . BML::ml('entryform.mood') . "</label>";
+cgi-bin/LJ/Web.pm:                my @moodlist = ('', BML::ml('entryform.mood.noneother'));
+cgi-bin/LJ/Web.pm:            $out .= "<label for='comment_settings' class='left options'>" . BML::ml('entryform.comment.settings2') . "</label>\n";
+cgi-bin/LJ/Web.pm:            my $comment_settings_default = BML::ml('entryform.comment.settings.default5', {'aopts' => $comment_settings_journaldefault->()});
+cgi-bin/LJ/Web.pm:                 "", $comment_settings_default, "nocomments", BML::ml( $nocomments_display ,"noemail" ), "noemail", BML::ml( 'entryform.comment.settings.noemail' ));
+cgi-bin/LJ/Web.pm:                $out .= "<label for='prop_current_location' class='left options'>" . BML::ml( 'entryform.location' ) . "</label>";
+cgi-bin/LJ/Web.pm:            $out .= "<label for='prop_opt_screening' class='left options'>" . BML::ml('entryform.comment.screening2') . "</label>\n";
+cgi-bin/LJ/Web.pm:                    $opt_default_screen eq 'N' ? BML::ml('label.screening.none2') :
+cgi-bin/LJ/Web.pm:                    $opt_default_screen eq 'R' ? BML::ml('label.screening.anonymous2') :
+cgi-bin/LJ/Web.pm:                    $opt_default_screen eq 'F' ? BML::ml('label.screening.nonfriends2') :
+cgi-bin/LJ/Web.pm:                    $opt_default_screen eq 'A' ? BML::ml('label.screening.all2') : BML::ml('label.screening.none2');
+cgi-bin/LJ/Web.pm:            my @levels = ('', BML::ml('label.screening.default4', {'aopts'=>$screening_levels_default}), 'N', BML::ml('label.screening.none2'),
+cgi-bin/LJ/Web.pm:                      'R', BML::ml('label.screening.anonymous2'), 'F', BML::ml('label.screening.nonfriends2'),
+cgi-bin/LJ/Web.pm:                      'A', BML::ml('label.screening.all2'));
+cgi-bin/LJ/Web.pm:            $out .= "<label for='prop_current_music' class='left options'>" . BML::ml('entryform.music') . "</label>\n";
+cgi-bin/LJ/Web.pm:            # BML::ml('entryform.music')
+cgi-bin/LJ/Web.pm:                    "" => BML::ml('entryform.adultcontent.default'),
+cgi-bin/LJ/Web.pm:                    none => BML::ml('entryform.adultcontent.none'),
+cgi-bin/LJ/Web.pm:                    concepts => BML::ml('entryform.adultcontent.concepts'),
+cgi-bin/LJ/Web.pm:                    explicit => BML::ml('entryform.adultcontent.explicit'),
+cgi-bin/LJ/Web.pm:                $out .= "<label for='prop_adult_content' class='left options'>" . BML::ml('entryform.adultcontent') . "</label>\n";
+cgi-bin/LJ/Web.pm:                 $out .= "<label for='prop_adult_content_reason' class='left options'>" . BML::ml('entryform.adultcontentreason') . "</label>";
+cgi-bin/LJ/Web.pm:                            $accthtml .= "<label for='prop_xpost_password_$acctid'>" . BML::ml('xpost.password') . "</label>";
+cgi-bin/LJ/Web.pm:                $out .= "var xpostCheckingMessage = '" . BML::ml('xpost.nopw.checking') . "';\n";
+cgi-bin/LJ/Web.pm:                $out .= "var xpostCancelLabel =  '" . BML::ml('xpost.nopw.cancel') . "';\n";
+cgi-bin/LJ/Web.pm:                $out .= "var xpostPwRequired = '" . BML::ml('xpost.nopw.required') . "';\n";
+cgi-bin/LJ/Web.pm:                $out .= "<p><label for='prop_xpost_check' class='left options'>" . BML::ml('entryform.xpost') . "</label>";
+cgi-bin/LJ/Web.pm:                $out .= "<a href = '/manage/settings/?cat=othersites'>" . BML::ml('entryform.xpost.manage') . "</a>";
+cgi-bin/LJ/Web.pm:            $preview    = "<input type='button' value='" . BML::ml('entryform.preview') . "' onclick='entryPreview(this.form)' tabindex='" . $tabindex->() . "' />";
+cgi-bin/LJ/Web.pm:                $out .= LJ::html_submit('action:spellcheck', BML::ml('entryform.spellcheck'), { onclick => 'XPostAccount.doSpellcheck()', tabindex => $tabindex->() }) . "&nbsp;";
+cgi-bin/LJ/Web.pm:            $out .= "<input type='button' value='" . BML::ml( 'entryform.updatedate' ) . "' onclick='settime(\"" . LJ::ejs( BML::ml( 'entryform.dateupdated' ) ) . "\", this);' tabindex='" . $tabindex->() . "' />";
+cgi-bin/LJ/Web.pm:        $out .= "<em>" . BML::ml('entryform.maintainer') . "</em>\n";
+cgi-bin/LJ/Web.pm:                "" => BML::ml('entryform.adultcontent.default'),
+cgi-bin/LJ/Web.pm:                none => BML::ml('entryform.adultcontent.none'),
+cgi-bin/LJ/Web.pm:                concepts => BML::ml('entryform.adultcontent.concepts'),
+cgi-bin/LJ/Web.pm:                explicit => BML::ml('entryform.adultcontent.explicit'),
+cgi-bin/LJ/Web.pm:                "" => BML::ml('entryform.adultcontent.poster', {setting => $poster_adult_content_menu{$opts->{prop_adult_content}}}),
+cgi-bin/LJ/Web.pm:                none => BML::ml('entryform.adultcontent.none'),
+cgi-bin/LJ/Web.pm:                concepts => BML::ml('entryform.adultcontent.concepts'),
+cgi-bin/LJ/Web.pm:                explicit => BML::ml('entryform.adultcontent.explicit'),
+cgi-bin/LJ/Web.pm:            $out .= "<label for='prop_adult_content_maintainer' class='left options'>" . BML::ml('entryform.adultcontent.maintainer') . "</label>\n";
+cgi-bin/LJ/Web.pm:             $out .= "<label for='prop_adult_content_maintainer_reason' class='left options'>" . BML::ml('entryform.adultcontentreason.maintainer') . "</label>";
+cgi-bin/LJ/Web.pm:            $out .= "<label for='prop_opt_nocomments_maintainer' class='left options'>" . BML::ml( 'entryform.comment.disable' ) . "</label>";
+cgi-bin/LJ/Web.pm:                my $string_public = LJ::ejs(BML::ml('label.security.public2'));
+cgi-bin/LJ/Web.pm:                my $string_friends = LJ::ejs(BML::ml('label.security.accesslist'));
+cgi-bin/LJ/Web.pm:                my $string_friends_comm = LJ::ejs(BML::ml('label.security.members'));
+cgi-bin/LJ/Web.pm:                my $string_private = LJ::ejs(BML::ml('label.security.private2'));
+cgi-bin/LJ/Web.pm:                my $string_admin = LJ::ejs( BML::ml( 'label.security.maintainers' ) );
+cgi-bin/LJ/Web.pm:                my $string_custom = LJ::ejs(BML::ml('label.security.custom'));
+cgi-bin/LJ/Web.pm:                    $out .= "<label for='security'>" . BML::ml('entryform.security2') . " </label>\n";
+cgi-bin/LJ/Web.pm:            $$onload .= " changeSubmit('" . BML::ml('entryform.update3') . "', '$defaultjournal');";
+cgi-bin/LJ/Web.pm:            $out .= LJ::html_submit('action:update', BML::ml('entryform.update4'),
+cgi-bin/LJ/Web.pm:                $out .= LJ::html_submit('action:save', BML::ml('entryform.save'),
+cgi-bin/LJ/Web.pm:                $out .= LJ::html_submit('action:savemaintainer', BML::ml('entryform.save.maintainer'),
+cgi-bin/LJ/Web.pm:                $out .= LJ::html_submit('action:saveunsuspend', BML::ml('entryform.saveandrequestunsuspend2'),
+cgi-bin/LJ/Web.pm:            my $delete_onclick = "return XPostAccount.confirmDelete('" . LJ::ejs(BML::ml('entryform.delete.confirm')) . "', '" . LJ::ejs(BML::ml('entryform.delete.xposts.confirm')) . "')";
+cgi-bin/LJ/Web.pm:            $out .= LJ::html_submit('action:delete', BML::ml('entryform.delete'), {
+cgi-bin/LJ/Web.pm:                $out .= LJ::html_submit('action:deletespam', BML::ml('entryform.deletespam'), {
+cgi-bin/LJ/Web.pm:                    'onclick' => "return confirm('" . LJ::ejs(BML::ml('entryform.deletespam.confirm')) . "')",
+cgi-bin/LJ/Web.pm:    my @secs = ( "public", BML::ml( 'label.security.public2' ),
+cgi-bin/LJ/Web.pm:                 "friends", BML::ml( 'label.security.accesslist' ),
+cgi-bin/LJ/Web.pm:                 "private", BML::ml( 'label.security.private2' ) );
+cgi-bin/LJ/Web.pm:                                   ( "", BML::ml( 'entryform.opt.defpic' ),
+cgi-bin/LJ/Web.pm:    if ( $POST->{"subject"} && ( $POST->{"subject"} eq BML::ml( 'entryform.subject.hint2' ) ) ) {
+cgi-bin/LJ/Web.pm:    my $create_link = LJ::Hooks::run_hook("override_create_link_on_navstrip", $journal) || "<a href='$LJ::SITEROOT/create'>" . BML::ml('web.controlstrip.links.create', {'sitename' => $LJ::SITENAMESHORT}) . "</a>";
+cgi-bin/LJ/Web.pm:                 'login'             => "<a href='$LJ::SITEROOT/?returnto=$euri'>$BML::ML{'web.controlstrip.links.login'}</a>",
+cgi-bin/LJ/Web.pm:                 'post_journal'      => "<a href='$LJ::SITEROOT/update'>$BML::ML{'web.controlstrip.links.post2'}</a>",
+cgi-bin/LJ/Web.pm:                 'home'              => "<a href='$LJ::SITEROOT/'>" . $BML::ML{'web.controlstrip.links.home'} . "</a>",
+cgi-bin/LJ/Web.pm:                 'recent_comments'   => "<a href='$LJ::SITEROOT/tools/recent_comments'>$BML::ML{'web.controlstrip.links.recentcomments'}</a>",
+cgi-bin/LJ/Web.pm:                 'manage_friends'    => "<a href='$LJ::SITEROOT/manage/circle/'>$BML::ML{'web.controlstrip.links.managecircle'}</a>",
+cgi-bin/LJ/Web.pm:                 'manage_entries'    => "<a href='$LJ::SITEROOT/editjournal'>$BML::ML{'web.controlstrip.links.manageentries'}</a>",
+cgi-bin/LJ/Web.pm:                 'invite_friends'    => "<a href='$LJ::SITEROOT/manage/circle/invite'>$BML::ML{'web.controlstrip.links.invitefriends'}</a>",
+cgi-bin/LJ/Web.pm:                 'syndicated_list'   => "<a href='$LJ::SITEROOT/feeds/list'>$BML::ML{'web.controlstrip.links.popfeeds'}</a>",
+cgi-bin/LJ/Web.pm:                 'learn_more'        => LJ::Hooks::run_hook('control_strip_learnmore_link') || "<a href='$LJ::SITEROOT/'>$BML::ML{'web.controlstrip.links.learnmore'}</a>",
+cgi-bin/LJ/Web.pm:                 'explore'           => "<a href='$LJ::SITEROOT/explore/'>" . BML::ml('web.controlstrip.links.explore', { sitenameabbrev => $LJ::SITENAMEABBREV }) . "</a>",
+cgi-bin/LJ/Web.pm:                 'confirm'           => "<a href='$LJ::SITEROOT/register'>$BML::ML{'web.controlstrip.links.confirm'}</a>",
+cgi-bin/LJ/Web.pm:        $links{inbox} .= "<a href='$LJ::SITEROOT/inbox/'>$BML::ML{'web.controlstrip.links.inbox'}";
+cgi-bin/LJ/Web.pm:        $links{settings} = "<a href='$LJ::SITEROOT/manage/settings'>$BML::ML{'web.controlstrip.links.settings'}</a>";
+cgi-bin/LJ/Web.pm:        $links{'view_friends_page'} = "<a href='" . $remote->journal_base . "/read'>$BML::ML{'web.controlstrip.links.viewreadingpage'}</a>";
+cgi-bin/LJ/Web.pm:        $links{'add_friend'} = "<a href='$LJ::SITEROOT/manage/circle/add?user=$journal->{user}'>$BML::ML{'web.controlstrip.links.addtocircle'}</a>";
+cgi-bin/LJ/Web.pm:        $links{'edit_friend'} = "<a href='$LJ::SITEROOT/manage/circle/add?user=$journal->{user}'>$BML::ML{'web.controlstrip.links.modifycircle'}</a>";
+cgi-bin/LJ/Web.pm:        $links{'track_user'} = "<a href='$LJ::SITEROOT/manage/tracking/user?journal=$journal->{user}'>$BML::ML{'web.controlstrip.links.trackuser'}</a>";
+cgi-bin/LJ/Web.pm:            $links{'add_friend'} = "<a href='$LJ::SITEROOT/manage/circle/add?user=$journal->{user}&action=subscribe'>$BML::ML{'web.controlstrip.links.addfeed'}</a>";
+cgi-bin/LJ/Web.pm:            $links{'remove_friend'} = "<a href='$LJ::SITEROOT/manage/circle/add?user=$journal->{user}&action=remove'>$BML::ML{'web.controlstrip.links.removefeed'}</a>";
+cgi-bin/LJ/Web.pm:            $links{'join_community'}   = "<a href='$LJ::SITEROOT/community/join?comm=$journal->{user}'>$BML::ML{'web.controlstrip.links.joincomm'}</a>"
+cgi-bin/LJ/Web.pm:            $links{'leave_community'}  = "<a href='$LJ::SITEROOT/community/leave?comm=$journal->{user}'>$BML::ML{'web.controlstrip.links.leavecomm'}</a>";
+cgi-bin/LJ/Web.pm:            $links{'watch_community'}  = "<a href='$LJ::SITEROOT/manage/circle/add?user=$journal->{user}&action=subscribe'>$BML::ML{'web.controlstrip.links.watchcomm'}</a>";
+cgi-bin/LJ/Web.pm:            $links{'unwatch_community'}   = "<a href='$LJ::SITEROOT/community/leave?comm=$journal->{user}'>$BML::ML{'web.controlstrip.links.removecomm'}</a>";
+cgi-bin/LJ/Web.pm:            $links{'post_to_community'}   = "<a href='$LJ::SITEROOT/update?usejournal=$journal->{user}'>$BML::ML{'web.controlstrip.links.postcomm'}</a>";
+cgi-bin/LJ/Web.pm:            $links{'edit_community_profile'} = "<a href='$LJ::SITEROOT/manage/profile/?authas=$journal->{user}'>$BML::ML{'web.controlstrip.links.editcommprofile'}</a>";
+cgi-bin/LJ/Web.pm:            $links{'edit_community_invites'} = "<a href='$LJ::SITEROOT/community/sentinvites?authas=$journal->{user}'>$BML::ML{'web.controlstrip.links.managecomminvites'}</a>";
+cgi-bin/LJ/Web.pm:            $links{'edit_community_members'} = "<a href='$LJ::SITEROOT/community/members?authas=$journal->{user}'>$BML::ML{'web.controlstrip.links.editcommmembers'}</a>";
+cgi-bin/LJ/Web.pm:            $links{'track_community'} = "<a href='$LJ::SITEROOT/manage/tracking/user?journal=$journal->{user}'>$BML::ML{'web.controlstrip.links.trackcomm'}</a>";
+cgi-bin/LJ/Web.pm:            $links{'queue'} = "<a href='$LJ::SITEROOT/community/moderate?authas=$journal->{user}'>$BML::ML{'web.controlstrip.links.queue'}</a>";
+cgi-bin/LJ/Web.pm:                    'yourjournal'       => $BML::ML{'web.controlstrip.status.yourjournal'},
+cgi-bin/LJ/Web.pm:                    'yourfriendspage'   => $BML::ML{'web.controlstrip.status.yourreadingpage'},
+cgi-bin/LJ/Web.pm:                    'yourfriendsfriendspage' => $BML::ML{'web.controlstrip.status.yournetworkpage'},
+cgi-bin/LJ/Web.pm:                    'personal'          => BML::ml('web.controlstrip.status.personal', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'personalfriendspage' => BML::ml('web.controlstrip.status.personalreadingpage', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'personalfriendsfriendspage' => BML::ml('web.controlstrip.status.personalnetworkpage', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'community'         => BML::ml('web.controlstrip.status.community', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'syn'               => BML::ml('web.controlstrip.status.syn', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'other'             => BML::ml('web.controlstrip.status.other', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'mutualtrust' => BML::ml('web.controlstrip.status.mutualtrust', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'mutualtrust_mutualwatch' => BML::ml('web.controlstrip.status.mutualtrust_mutualwatch', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'mutualtrust_watch' => BML::ml('web.controlstrip.status.mutualtrust_watch', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'mutualtrust_watchedby' => BML::ml('web.controlstrip.status.mutualtrust_watchedby', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'mutualwatch' => BML::ml('web.controlstrip.status.mutualwatch', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'trust_mutualwatch' => BML::ml('web.controlstrip.status.trust_mutualwatch', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'trust_watch' => BML::ml('web.controlstrip.status.trust_watch', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'trust_watchedby' => BML::ml('web.controlstrip.status.trust_watchedby', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'trustedby_mutualwatch' => BML::ml('web.controlstrip.status.trustedby_mutualwatch', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'trustedby_watch' => BML::ml('web.controlstrip.status.trustedby_watch', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'trustedby_watchedby' => BML::ml('web.controlstrip.status.trustedby_watchedby', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'maintainer'        => BML::ml('web.controlstrip.status.maintainer', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'memberwatcher'     => BML::ml('web.controlstrip.status.memberwatcher', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'watcher'           => BML::ml('web.controlstrip.status.watcher', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'member'            => BML::ml('web.controlstrip.status.member', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'trusted'           => BML::ml('web.controlstrip.status.trusted', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'watched'           => BML::ml('web.controlstrip.status.watched', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'trusted_by'        => BML::ml('web.controlstrip.status.trustedby', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:                    'watched_by'        => BML::ml('web.controlstrip.status.watchedby', {'user' => $journal_display}),
+cgi-bin/LJ/Web.pm:            $ret .= "<img src='" . $userpic->url . "' alt=\"$BML::ML{'web.controlstrip.userpic.alt'}\" title=\"$BML::ML{'web.controlstrip.userpic.title'}\" $wh /></a></td>";
+cgi-bin/LJ/Web.pm:            $ret .= "alt=\"$BML::ML{'web.controlstrip.nouserpic.alt'}\" title=\"$BML::ML{'web.controlstrip.nouserpic.title'}\" height='43' width='43' />";
+cgi-bin/LJ/Web.pm:        my $logout = "<input type='submit' value=\"$BML::ML{'web.controlstrip.btn.logout'}\" id='Logout' />";
+cgi-bin/LJ/Web.pm:                my @filters = ("all", $BML::ML{'web.controlstrip.select.friends.all'}, "showpeople", $BML::ML{'web.controlstrip.select.friends.journals'}, "showcommunities", $BML::ML{'web.controlstrip.select.friends.communities'}, "showsyndicated", $BML::ML{'web.controlstrip.select.friends.feeds'});
+cgi-bin/LJ/Web.pm:                $ret .= "$BML::ML{'web.controlstrip.select.friends.label'} <form method='post' style='display: inline;' action='$LJ::SITEROOT/manage/circle/filter'>\n";
+cgi-bin/LJ/Web.pm:                $ret .= LJ::html_submit($BML::ML{'web.controlstrip.btn.view'});
+cgi-bin/LJ/Web.pm:                <label for="xc_user">$BML::ML{'/login.bml.login.username'}</label> <input type="text" name="user" size="7" maxlength="27" tabindex="1" id="xc_user" value="" />
+cgi-bin/LJ/Web.pm:                <label style="margin-left: 3px;" for="xc_password">$BML::ML{'/login.bml.login.password'}</label> <input type="password" name="password" size="7" tabindex="2" id="xc_password" class='lj_login_password' />
+cgi-bin/LJ/Web.pm:            $ret .= "<input type='submit' value=\"$BML::ML{'web.controlstrip.btn.login'}\" tabindex='4' />";
+cgi-bin/LJ/Web.pm:            $ret .= "<a href='$LJ::SITEROOT/openid/' tabindex='5'>$BML::ML{'web.controlstrip.login.openid'}</a>";
+cgi-bin/LJ/Web.pm:            $ret .= " <a href='$LJ::SITEROOT/lostinfo' tabindex='6'>$BML::ML{'web.controlstrip.login.forgot'}</a>";
+cgi-bin/LJ/Web.pm:            $ret .= "<label for='xc_remember'>$BML::ML{'web.controlstrip.login.remember'}</label>";
+cgi-bin/LJ/Web.pm:    my $ui_inbox  = BML::ml('subscribe_interface.inbox');
+cgi-bin/LJ/Web.pm:    my $ui_manage = BML::ml('subscribe_interface.manage_settings');
+cgi-bin/LJ/Web.pm:    my $ui_notify = BML::ml('subscribe_interface.notify_me2', { sitenameabbrev => $LJ::SITENAMEABBREV });
+cgi-bin/LJ/Web.pm:    my $ui_by     = BML::ml('subscribe_interface.by2');
+cgi-bin/LJ/Web.pm:        my $cat_title = BML::ml('subscribe_interface.category.'.$cat_title_key);
+cgi-bin/LJ/Web.pm:    my $referer = BML::get_client_header('Referer') || '';
+cgi-bin/LJ/Web.pm:            . "<li>" . LJ::html_submit(BML::ml('subscribe_interface.save')) . '</li>'
+cgi-bin/LJ/Web.pm:            ($referer && $referer ne $uri ? "<li><input type='button' value='".BML::ml('subscribe_interface.cancel')."' onclick='window.location=\"$referer\"' /></li>" : '');
+cgi-bin/LJ/Web.pm:    my $lang = eval { BML::get_language() };
+cgi-bin/LJ/Setting/FOAFURL.pm:    local $BML::ML_SCOPE = "/editinfo.bml";
+cgi-bin/LJ/Setting/FOAFURL.pm:    my $ret = $BML::ML{'.foafurl.title'} .
+cgi-bin/LJ/Setting/FOAFURL.pm:    $ret .= "<br />$BML::ML{'.foafurl.about'}";
+cgi-bin/LJ/Setting/SiteScheme.pm:    BML::set_scheme( $val );
+cgi-bin/LJ/Setting/MailEncoding.pm:    local $BML::ML_SCOPE = "/editinfo.bml";
+cgi-bin/LJ/Setting/MailEncoding.pm:    my $ret = "<?h2 $BML::ML{'.translatemailto.header'} h2?>\n";
+cgi-bin/LJ/Setting/MailEncoding.pm:    $ret .= "<br />\n$BML::ML{'.translatemailto.about'}";
+cgi-bin/LJ/Setting/Language.pm:    my $lang = $class->get_arg($args, "lang") || BML::get_language();
+cgi-bin/LJ/Setting/Birthday.pm:    local $BML::ML_SCOPE = "/manage/profile/index.bml";
+cgi-bin/LJ/Widget/InboxFolder.pm:            BML::ebml(\$contents);
+cgi-bin/LJ/Widget/PopularInterests.pm:    my @rand = BML::randlist(@$rows);
+cgi-bin/LJ/Widget/SubmitRequest.pm:    $req{'useragent'} = BML::get_client_header('User-Agent')
+cgi-bin/LJ/Widget/Feeds.pm:    my @rand = BML::randlist(@$popsyn);
+cgi-bin/LJ/Widget/SettingProdDisplay.pm:    my $r = BML::get_request();
+cgi-bin/LJ/Widget/Login.pm:    my $r = eval { BML::get_request() };
+cgi-bin/LJ/Widget/Login.pm:    my $referer = BML::get_client_header('Referer');
+cgi-bin/LJ/Widget/Login.pm:        $ret .= LJ::html_hidden('ret', $LJ::SITEROOT . BML::get_uri());
+cgi-bin/LJ/Widget/InboxFolderNav.pm:        $link .= BML::ml( $link_label );
+cgi-bin/LJ/Widget/InboxFolderNav.pm:        or return LJ::error_list( BML::ml('inbox.error.couldnt_retrieve_inbox', { 'user' => $remote->{user} }) );
+cgi-bin/LJ/Widget/ThemeNav.pm:    my $q_string = BML::get_query_string();
+cgi-bin/LJ/Widget/ThemeNav.pm:    return BML::redirect($url);
+cgi-bin/LJ/Widget/CreateAccountUpgrade.pm:    return BML::redirect( "$LJ::SITEROOT/shop/account?for=self" );
+cgi-bin/LJ/Widget/ShopCart.pm:    return BML::redirect( "$LJ::SITEROOT/shop/checkout?method=$cm" )
+cgi-bin/LJ/Widget/ShopCart.pm:        return BML::redirect( "$LJ::SITEROOT/shop?newcart=1" );
+cgi-bin/LJ/Widget/CreateAccount.pm:            return BML::redirect( $uri );
+cgi-bin/LJ/Widget/CreateAccount.pm:        return BML::redirect($redirect) if $redirect;
+cgi-bin/LJ/Widget/CreateAccount.pm:        return BML::redirect($redirect) if $redirect;
+cgi-bin/LJ/Widget/CreateAccount.pm:        return BML::redirect( "$LJ::SITEROOT/create/setup" );
+cgi-bin/ljlib.pl:    eval { BML::reset_cookies() };
+cgi-bin/DW/Request/Apache2.pm:    return Apache::BML::handler($self->{r});
+cgi-bin/DW/External/XPostProtocol/LJXMLRPC.pm:        description => BML::ml( '.protocol.ljxmlrpc.minsecurity.desc' ),
+cgi-bin/DW/External/XPostProtocol/LJXMLRPC.pm:            'public', BML::ml( '.protocol.ljxmlrpc.minsecurity.public' ),
+cgi-bin/DW/External/XPostProtocol/LJXMLRPC.pm:            'friends', BML::ml( '.protocol.ljxmlrpc.minsecurity.friends' ),
+cgi-bin/DW/External/XPostProtocol/LJXMLRPC.pm:            'private', BML::ml( '.protocol.ljxmlrpc.minsecurity.private' ),
+cgi-bin/DW/Shop.pm:        return BML::ml( 'error.blocked', { blocktype => "computer", email => $LJ::ACCOUNTS_EMAIL } );
+cgi-bin/DW/Shop.pm:            return BML::ml( 'error.blocked', { blocktype => "account", email => $LJ::ACCOUNTS_EMAIL } );
+cgi-bin/DW/Shop.pm:            return BML::ml( 'error.blocked', { blocktype => "email address", email => $LJ::ACCOUNTS_EMAIL } );
+cgi-bin/DW/Shop.pm:    return BML::ml( 'error.blocked', { blocktype => "Tor proxy", email => $LJ::ACCOUNTS_EMAIL } )
+cgi-bin/DW/Hooks/Changelog.pm:    my $ip = BML::get_remote_ip();
+cgi-bin/DW/Shop/Cart.pm:        ip        => BML::get_remote_ip(),
+cgi-bin/DW/Shop/Engine/GoogleCheckout.pm:        undef, $gon, BML::get_remote_ip(), nfreeze( $form )
+cgi-bin/DW/Shop/Engine/PayPal.pm:                    }, undef, $ppid, BML::get_remote_ip(), $reqct, $res->content );
+cgi-bin/DW/Shop/Engine/PayPal.pm:        undef, BML::get_remote_ip(), nfreeze( $form )
+cgi-bin/DW/User/Rename.pm:        ip       => eval { BML::get_remote_ip() } || "[unknown]",
+cgi-bin/DW/Setting/Display/AccountLevel.pm:        return BML::ml( 'setting.display.accounttype.status', { status => $paidtype, exptime => $expiretime } );
+cgi-bin/DW/Controller/RPC/CutExpander.pm:        return $error_out->( 200, BML::ml( "error.nopermission" ) ) unless $entry;
+cgi-bin/DW/Controller/RPC/CutExpander.pm:    return $error_out->( 200, BML::ml( "error.nopermission" ) );
+cgi-bin/DW/Widget/RecentlyActiveComms.pm:    $ret .= "<li><em> " . BML::ml( 'widget.comms.notavailable' ) . "</em></li>" unless $ct;
+cgi-bin/DW/Widget/NewlyCreatedComms.pm:    $ret .= "<li><em> " . BML::ml( 'widget.comms.notavailable' ) . "</em></li>" unless $ct;
+cgi-bin/DW/Widget/AccountStatistics.pm:                ? BML::ml( 'widget.accountstatistics.expires_on', { type => $accttype, date => DateTime->from_epoch( epoch => $expire_time )->date } ) 
+cgi-bin/DW/Captcha.pm:    $ret .= "<p style='clear:both'>" . BML::ml( 'captcha.accessibility.contact', { email => $LJ::SUPPORT_EMAIL } ) . "</p>";
+cgi-bin/bml/scheme/global.look: my $uri = BML::get_uri();
+cgi-bin/bml/scheme/global.look:            push @displayed, "<li class='subnav'><a href='$item->{url}'>" . BML::ml( "$item->{text}", $item->{text_opts} ) . "</a></li>" if $item->{display};
+cgi-bin/bml/scheme/tt_runner.look:return BML::ebml( DW::Template->render_scheme( $scheme, $_[2]->{BODY}, {
+cgi-bin/lj-bml-blocks.pl:BML::register_block("DOMAIN", "S", $LJ::DOMAIN);
+cgi-bin/lj-bml-blocks.pl:BML::register_block("IMGPREFIX", "S", $LJ::IMGPREFIX);
+cgi-bin/lj-bml-blocks.pl:BML::register_block("SSLIMGPREFIX", "S", $LJ::SSLIMGPREFIX);
+cgi-bin/lj-bml-blocks.pl:BML::register_block("STATPREFIX", "S", $LJ::STATPREFIX);
+cgi-bin/lj-bml-blocks.pl:BML::register_block("SSLSTATPREFIX", "S", $LJ::SSLSTATPREFIX);
+cgi-bin/lj-bml-blocks.pl:BML::register_block("SITEROOT", "S", $LJ::SITEROOT);
+cgi-bin/lj-bml-blocks.pl:BML::register_block("SITENAME", "S", $LJ::SITENAME);
+cgi-bin/lj-bml-blocks.pl:BML::register_block("ADMIN_EMAIL", "S", $LJ::ADMIN_EMAIL);
+cgi-bin/lj-bml-blocks.pl:BML::register_block("SUPPORT_EMAIL", "S", $LJ::SUPPORT_EMAIL);
+cgi-bin/lj-bml-blocks.pl:BML::register_block("CHALRESPJS", "", $LJ::COMMON_CODE{'chalresp_js'});
+cgi-bin/lj-bml-blocks.pl:BML::register_block("JSPREFIX", "S", $LJ::JSPREFIX);
+cgi-bin/lj-bml-blocks.pl:BML::register_block("SSLJSPREFIX", "S", $LJ::SSLJSPREFIX);
+cgi-bin/lj-bml-blocks.pl:BML::register_block("LJUSER", "DS", sub { LJ::ljuser($_[0]->{DATA}); });
+cgi-bin/lj-bml-blocks.pl:BML::register_block("LJCOMM", "DS", sub { LJ::ljuser($_[0]->{DATA}); });
+cgi-bin/lj-bml-blocks.pl:BML::register_block("LJUSERF", "DS", sub { LJ::ljuser($_[0]->{DATA}, { full => 1 }); });
+cgi-bin/lj-bml-blocks.pl:BML::register_block("NEEDLOGIN", "", sub {
+cgi-bin/lj-bml-blocks.pl:    my $uri = BML::get_uri();
+cgi-bin/lj-bml-blocks.pl:    if (my $qs = BML::get_query_string()) {
+cgi-bin/lj-bml-blocks.pl:    return BML::redirect("$LJ::SITEROOT/?returnto=$uri");
+cgi-bin/lj-bml-blocks.pl:    BML::register_block("DL", "DR", $dl);
+cgi-bin/lj-bml-blocks.pl:    BML::register_block("METACTYPE", "S", '<meta http-equiv="Content-Type" content="text/html; charset=utf-8">')
+cgi-bin/lj-bml-blocks.pl:    BML::register_block("METACTYPE", "S", '<meta http-equiv="Content-Type" content="text/html">')
+cgi-bin/Apache/LiveJournal.pm:    return redir(BML::get_request(), LJ::remote_bounce_url(), HTTP_MOVED_TEMPORARILY);
+cgi-bin/Apache/LiveJournal.pm:    BML::set_language($lang, \&LJ::Lang::get_text);
+cgi-bin/Apache/LiveJournal.pm:        $r->push_handlers(PerlHandler => \&Apache::BML::handler);
+cgi-bin/Apache/LiveJournal.pm:            return Apache::BML::handler($r);
+cgi-bin/Apache/LiveJournal.pm:            return Apache::BML::handler($r);
+cgi-bin/Apache/BML.pm:package BML::Request;
+cgi-bin/Apache/BML.pm:    $Apache::BML::HAVE_ZLIB = eval "use Compress::Zlib (); 1;";
+cgi-bin/Apache/BML.pm:# the request we're handling (BML::get_request()).  using this way
+cgi-bin/Apache/BML.pm:# instead of just using BML::get_request() because when using
+cgi-bin/Apache/BML.pm:# the value of BML::get_request()
+cgi-bin/Apache/BML.pm:tie %BML::ML, 'BML::ML';
+cgi-bin/Apache/BML.pm:tie %BML::COOKIE, 'BML::Cookie';
+cgi-bin/Apache/BML.pm:    $Apache::BML::r = $r;
+cgi-bin/Apache/BML.pm:    my $file = Apache::BML::decide_file_and_stat($r);
+cgi-bin/Apache/BML.pm:    my $req = Apache::BML::initialize_cur_req($r, $file);
+cgi-bin/Apache/BML.pm:            $Apache::BML::r = undef;  # no longer valid
+cgi-bin/Apache/BML.pm:        $Apache::BML::r = undef;  # no longer valid
+cgi-bin/Apache/BML.pm:    note_mod_time($req, $Apache::BML::base_recent_mod);
+cgi-bin/Apache/BML.pm:    *BMLCodeBlock::COOKIE = *BML::COOKIE;
+cgi-bin/Apache/BML.pm:    BML::reset_cookies();
+cgi-bin/Apache/BML.pm:    # tied interface to BML::ml();
+cgi-bin/Apache/BML.pm:    *BMLCodeBlock::ML = *BML::ML;
+cgi-bin/Apache/BML.pm:    $BML::CODE_INIT_PERL = "";
+cgi-bin/Apache/BML.pm:        $BML::CODE_INIT_PERL = eval { $env->{'HOOK-codeblock_init_perl'}->(); };
+cgi-bin/Apache/BML.pm:        $BML::COOKIE{'BMLschemepref'};
+cgi-bin/Apache/BML.pm:    unless (BML::set_scheme($scheme)) {
+cgi-bin/Apache/BML.pm:        BML::set_scheme($scheme);
+cgi-bin/Apache/BML.pm:    BML::set_language_scope($lang_scope);
+cgi-bin/Apache/BML.pm:    my $lang = BML::decide_language();
+cgi-bin/Apache/BML.pm:    BML::set_language($lang);
+cgi-bin/Apache/BML.pm:    BML::send_cookies($req);
+cgi-bin/Apache/BML.pm:        $Apache::BML::r = undef;  # no longer valid
+cgi-bin/Apache/BML.pm:        $Apache::BML::r = undef;  # no longer valid
+cgi-bin/Apache/BML.pm:            $Apache::BML::r = undef;  # no longer valid
+cgi-bin/Apache/BML.pm:        my $do_gzip = $env->{'DoGZIP'} && $Apache::BML::HAVE_ZLIB;
+cgi-bin/Apache/BML.pm:    $Apache::BML::r = undef;  # no longer valid
+cgi-bin/Apache/BML.pm:    return $Apache::BML::cur_req ? 1 : 0;
+cgi-bin/Apache/BML.pm:    my $req = $cur_req = fields::new('BML::Request');
+cgi-bin/Apache/BML.pm:    $req->{file} = $file || Apache::BML::decide_file_and_stat($r);
+cgi-bin/Apache/BML.pm:    return $Apache::BML::cur_req = undef;
+cgi-bin/Apache/BML.pm:    my $r = $Apache::BML::r;
+cgi-bin/Apache/BML.pm:    return undef unless Apache::BML::is_initialized();
+cgi-bin/Apache/BML.pm:    my BML::Request $req = $Apache::BML::cur_req;
+cgi-bin/Apache/BML.pm:        && $key !~ /^_</ && $val ne "*BML::COOKIE")
+cgi-bin/Apache/BML.pm:    my BML::Request $req = shift;
+cgi-bin/Apache/BML.pm:                         "*ML = *BML::ML;",
+cgi-bin/Apache/BML.pm:                         "*COOKIE = *BML::COOKIE;",
+cgi-bin/Apache/BML.pm:                         $BML::CODE_INIT_PERL, # extra from hook
+cgi-bin/Apache/BML.pm:        # don't call bml_decode if BML::noparse() told us not to, there's
+cgi-bin/Apache/BML.pm:            return BML::ehtml($element{'DATA'});
+cgi-bin/Apache/BML.pm:            return BML::ebml($element{'DATA'});
+cgi-bin/Apache/BML.pm:            return BML::eurl($element{'DATA'});
+cgi-bin/Apache/BML.pm:            return BML::eall($element{'DATA'});
+cgi-bin/Apache/BML.pm:    # from BML::register_block() in which case we want to execute it before we try
+cgi-bin/Apache/BML.pm:    my BML::Request $req = shift;
+cgi-bin/Apache/BML.pm:    my BML::Request $req = shift;  # optional
+cgi-bin/Apache/BML.pm:    my BML::Request $req = shift;
+cgi-bin/Apache/BML.pm:        if ($mod_time > $Apache::BML::base_recent_mod) {
+cgi-bin/Apache/BML.pm:            $Apache::BML::base_recent_mod = $mod_time;
+cgi-bin/Apache/BML.pm:    my BML::Request $req = shift;
+cgi-bin/Apache/BML.pm:    my $ua = BML::get_client_header("User-Agent");
+cgi-bin/Apache/BML.pm:    die "Can't use BML::fill_template($name) in non-BML context" unless $Apache::BML::cur_req;
+cgi-bin/Apache/BML.pm:    return Apache::BML::parsein(${$Apache::BML::cur_req->{'blockref'}->{uc($name)}},
+cgi-bin/Apache/BML.pm:    return undef unless Apache::BML::is_initialized();
+cgi-bin/Apache/BML.pm:    return $Apache::BML::cur_req->{'scheme'};
+cgi-bin/Apache/BML.pm:    return undef unless Apache::BML::is_initialized();
+cgi-bin/Apache/BML.pm:    my BML::Request $req = $Apache::BML::cur_req;
+cgi-bin/Apache/BML.pm:    return 0 unless Apache::BML::load_look($file);
+cgi-bin/Apache/BML.pm:            $iter = $Apache::BML::LookParent{$iter};
+cgi-bin/Apache/BML.pm:            while (my ($k, $v) = each %{$Apache::BML::LookItems{$file}}) {
+cgi-bin/Apache/BML.pm:    return undef unless Apache::BML::is_initialized();
+cgi-bin/Apache/BML.pm:    $Apache::BML::cur_req->{'etag'} = $etag;
+cgi-bin/Apache/BML.pm:    return undef unless Apache::BML::is_initialized();
+cgi-bin/Apache/BML.pm:    my $schemefile = $Apache::BML::cur_req->{'scheme_file'};
+cgi-bin/Apache/BML.pm:    my $r = $Apache::BML::r;
+cgi-bin/Apache/BML.pm:    my $r = $Apache::BML::r;
+cgi-bin/Apache/BML.pm:    %BML::COOKIE_M = ();
+cgi-bin/Apache/BML.pm:    $BML::COOKIES_PARSED = 0;
+cgi-bin/Apache/BML.pm:    die "BML::set_config called from non-conffile context.\n" unless $Apache::BML::conf_pl;
+cgi-bin/Apache/BML.pm:    $Apache::BML::conf_pl->{$key} ||= $val;
+cgi-bin/Apache/BML.pm:    #$Apache::BML::config->{$path}->{$key} = $val;
+cgi-bin/Apache/BML.pm:    $Apache::BML::CodeBlockOpts{'raw'} = 1;
+cgi-bin/Apache/BML.pm:    return undef unless Apache::BML::is_initialized();
+cgi-bin/Apache/BML.pm:    my BML::Request $req = $Apache::BML::cur_req;
+cgi-bin/Apache/BML.pm:    if ($BML::COOKIE{'langpref'} =~ m!^(\w{2,10})/(\d+)$!) {
+cgi-bin/Apache/BML.pm:    die "BML::register_language called from non-conffile context.\n" unless $Apache::BML::conf_pl;
+cgi-bin/Apache/BML.pm:    $Apache::BML::conf_pl->{"Langs-$langcode"} ||= 1;
+cgi-bin/Apache/BML.pm:    die "BML::register_isocode called from non-conffile context.\n" unless $Apache::BML::conf_pl;
+cgi-bin/Apache/BML.pm:    $Apache::BML::conf_pl->{"ISOCode-$isocode"} ||= $langcode;
+cgi-bin/Apache/BML.pm:    return undef unless Apache::BML::is_initialized();
+cgi-bin/Apache/BML.pm:    $Apache::BML::cur_req->{'want_last_modified'} = $_[0]
+cgi-bin/Apache/BML.pm:    return $Apache::BML::cur_req->{'want_last_modified'};
+cgi-bin/Apache/BML.pm:    Apache::BML::note_mod_time($Apache::BML::cur_req, $mod_time);
+cgi-bin/Apache/BML.pm:    return undef unless Apache::BML::is_initialized();
+cgi-bin/Apache/BML.pm:    $Apache::BML::cur_req->{'location'} = $url;
+cgi-bin/Apache/BML.pm:    return undef unless Apache::BML::is_initialized();
+cgi-bin/Apache/BML.pm:    $Apache::BML::cur_req->{'r'}->pool->cleanup_register($subref);
+cgi-bin/Apache/BML.pm:    my $target = $Apache::BML::conf_pl_look;
+cgi-bin/Apache/BML.pm:    die "BML::register_block called from non-lookfile context.\n" unless $target;
+cgi-bin/Apache/BML.pm:    die "BML::register_hook called from non-conffile context.\n" unless $Apache::BML::conf_pl;
+cgi-bin/Apache/BML.pm:    $Apache::BML::conf_pl->{"HOOK-$name"} = $code;
+cgi-bin/Apache/BML.pm:    # we do this, and not use $Apache::BML::r directly because some non-BML
+cgi-bin/Apache/BML.pm:    # callers sometimes use %BML::COOKIE, so $Apache::BML::r isn't set.
+cgi-bin/Apache/BML.pm:    # the cookie FETCH below calls this function to try and use BML::get_request(),
+cgi-bin/Apache/BML.pm:    $r ||= $Apache::BML::r;
+cgi-bin/Apache/BML.pm:    my $r = BML::get_request();
+cgi-bin/Apache/BML.pm:    my $r = BML::get_request();
+cgi-bin/Apache/BML.pm:    my $r = BML::get_request();
+cgi-bin/Apache/BML.pm:    my $r = BML::get_request();
+cgi-bin/Apache/BML.pm:    my $r = BML::get_request();
+cgi-bin/Apache/BML.pm:    my $r = BML::get_request();
+cgi-bin/Apache/BML.pm:    my $r = BML::get_request();
+cgi-bin/Apache/BML.pm:    my $r = BML::get_request();
+cgi-bin/Apache/BML.pm:    my $r = BML::get_request();
+cgi-bin/Apache/BML.pm:# name: BML::self_link
+cgi-bin/Apache/BML.pm:    my $link = $Apache::BML::r->uri;
+cgi-bin/Apache/BML.pm:        $link .= BML::eurl($_) . "=" . BML::eurl($val) . "&";
+cgi-bin/Apache/BML.pm:    my $r = $Apache::BML::r;
+cgi-bin/Apache/BML.pm:    return undef unless Apache::BML::is_initialized();
+cgi-bin/Apache/BML.pm:    $Apache::BML::cur_req->{'env'}->{'NoHeaders'} = 1;
+cgi-bin/Apache/BML.pm:    return undef unless Apache::BML::is_initialized();
+cgi-bin/Apache/BML.pm:    $Apache::BML::cur_req->{'env'}->{'NoContent'} = 1;
+cgi-bin/Apache/BML.pm:    return undef unless Apache::BML::is_initialized();
+cgi-bin/Apache/BML.pm:    $Apache::BML::cur_req->{'stop_flag'} = 1;
+cgi-bin/Apache/BML.pm:    return undef unless Apache::BML::is_initialized();
+cgi-bin/Apache/BML.pm:    $Apache::BML::cur_req->{'content_type'} = $_[0] if $_[0];
+cgi-bin/Apache/BML.pm:# name: BML::set_status
+cgi-bin/Apache/BML.pm:    $Apache::BML::r->status($_[0]+0) if $_[0];
+cgi-bin/Apache/BML.pm:    return undef unless Apache::BML::is_initialized();
+cgi-bin/Apache/BML.pm:    return $Apache::BML::cur_req->{'lang'};
+cgi-bin/Apache/BML.pm:    return "en" unless Apache::BML::is_initialized();
+cgi-bin/Apache/BML.pm:    return $Apache::BML::cur_req->{'env'}->{'DefaultLanguage'} || "en";
+cgi-bin/Apache/BML.pm:    return $BML::ML_SCOPE;
+cgi-bin/Apache/BML.pm:    $BML::ML_SCOPE = shift;
+cgi-bin/Apache/BML.pm:    my BML::Request $req = $Apache::BML::cur_req;
+cgi-bin/Apache/BML.pm:    my $r = BML::get_request();
+cgi-bin/Apache/BML.pm:    if (Apache::BML::is_initialized()) {
+cgi-bin/Apache/BML.pm:        *{"BML::ml"} = sub {
+cgi-bin/Apache/BML.pm:        *{"BML::ML::FETCH"} = sub {
+cgi-bin/Apache/BML.pm:        *{"BML::ml"} = sub {
+cgi-bin/Apache/BML.pm:            $code = $BML::ML_SCOPE . $code
+cgi-bin/Apache/BML.pm:        *{"BML::ML::FETCH"} = sub {
+cgi-bin/Apache/BML.pm:            $code = $BML::ML_SCOPE . $code
+cgi-bin/Apache/BML.pm:# note: sub is changed when BML::set_language is called
+cgi-bin/Apache/BML.pm:    return $Apache::BML::r->uri . "?" . join("&", @pair);
+cgi-bin/Apache/BML.pm:        return undef unless Apache::BML::is_initialized();
+cgi-bin/Apache/BML.pm:        $req = $Apache::BML::cur_req;
+cgi-bin/Apache/BML.pm:    return undef unless Apache::BML::is_initialized();
+cgi-bin/Apache/BML.pm:    my BML::Request $req = $Apache::BML::cur_req;
+cgi-bin/Apache/BML.pm:    $cookie .= "; HttpOnly" if $http_only && BML::http_only();
+cgi-bin/Apache/BML.pm:        $BML::COOKIE_M{$name} = [ $value ];
+cgi-bin/Apache/BML.pm:        delete $BML::COOKIE_M{$name};
+cgi-bin/Apache/BML.pm:#  BML::decl_params( $field => $rule, .... )
+cgi-bin/Apache/BML.pm:#           BML::decl_params(
+cgi-bin/Apache/BML.pm:package BML::Cookie;
+cgi-bin/Apache/BML.pm:    # we do this, and not use $Apache::BML::r directly because some non-BML
+cgi-bin/Apache/BML.pm:    # callers sometimes use %BML::COOKIE.
+cgi-bin/Apache/BML.pm:    my $r = BML::get_request();
+cgi-bin/Apache/BML.pm:    unless ($BML::COOKIES_PARSED) {
+cgi-bin/Apache/BML.pm:            my $dname  = BML::durl($name);
+cgi-bin/Apache/BML.pm:            my $dvalue = BML::durl($value);
+cgi-bin/Apache/BML.pm:            push @{$BML::COOKIE_M{$dname} ||= []}, $dvalue;
+cgi-bin/Apache/BML.pm:        $BML::COOKIES_PARSED = 1;
+cgi-bin/Apache/BML.pm:    return $BML::COOKIE_M{$key} || []  if $key =~ s/\[\]$//;
+cgi-bin/Apache/BML.pm:    return ($BML::COOKIE_M{$key} || [])->[-1];
+cgi-bin/Apache/BML.pm:    BML::set_cookie($key, $val, $etime, undef, undef, $http_only);
+cgi-bin/Apache/BML.pm:    foreach (keys %BML::COOKIE_M) {
+cgi-bin/Apache/BML.pm:    return defined $BML::COOKIE_M{$key};
+cgi-bin/Apache/BML.pm:    keys %BML::COOKIE_M;
+cgi-bin/Apache/BML.pm:    return each %BML::COOKIE_M;
+cgi-bin/Apache/BML.pm:    return each %BML::COOKIE_M;
+cgi-bin/Apache/BML.pm:# provide %BML::ML & %BMLCodeBlock::ML support:
+cgi-bin/Apache/BML.pm:package BML::ML;
+cgi-bin/Apache/BML.pm:# note: sub is changed when BML::set_language is called.
+cgi-bin/LJ/User.pm:    my $authas = $BMLCodeBlock::GET{authas} || $BMLCodeBlock::POST{authas} || $remote->user;
+cgi-bin/LJ/Widget.pm:        my $u = $opts{authas} || $BMLCodeBlock::GET{authas} || $BMLCodeBlock::POST{authas};
+cgi-bin/LJ/Widget.pm:    my $post = shift() || \%BMLCodeBlock::POST;
+cgi-bin/LJ/Widget.pm:    my $post = shift() || \%BMLCodeBlock::POST;
+cgi-bin/LJ/Widget.pm:    return \%BMLCodeBlock::GET;
+cgi-bin/LJ/Widget.pm:# pushes any errors onto @BMLCodeBlock::errors
+cgi-bin/LJ/Widget.pm:    my $errorsref = \@BMLCodeBlock::errors;
+cgi-bin/LJ/Widget.pm:    $errref ||= \@BMLCodeBlock::errors;
+cgi-bin/LJ/Widget.pm:    return @BMLCodeBlock::errors;
+cgi-bin/LJ/Widget.pm:Pushes an error onto a given arrayref of errors (or @BMLCodeBlock::errors) for
+cgi-bin/LJ/Widget.pm:list in @BMLCodeBlock::errors.
+cgi-bin/LJ/Global/BMLInit.pm:    return q{*errors = *BMLCodeBlock::errors;};
+cgi-bin/LJ/Web.pm:    my $formauth = shift || $BMLCodeBlock::POST{'lj_form_auth'};
+cgi-bin/modperl.pl:*BMLCodeBlock::check_email = \&LJ::check_email;
+cgi-bin/Apache/BML.pm:    *BMLCodeBlock::COOKIE = *BML::COOKIE;
+cgi-bin/Apache/BML.pm:    *BMLCodeBlock::ML = *BML::ML;
+cgi-bin/Apache/BML.pm:    %BMLCodeBlock::GET_POTENTIAL_XSS = ();
+cgi-bin/Apache/BML.pm:        foreach my $k (keys %BMLCodeBlock::GET) {
+cgi-bin/Apache/BML.pm:            next unless $BMLCodeBlock::GET{$k} =~ /\<|\%3C/i;
+cgi-bin/Apache/BML.pm:            $BMLCodeBlock::GET_POTENTIAL_XSS{$k} = $BMLCodeBlock::GET{$k};
+cgi-bin/Apache/BML.pm:            delete $BMLCodeBlock::GET{$k};
+cgi-bin/Apache/BML.pm:            delete $BMLCodeBlock::FORM{$k};
+cgi-bin/Apache/BML.pm:        $BMLCodeBlock::GET{'usescheme'} ||
+cgi-bin/Apache/BML.pm:        my $md5_package = "BMLCodeBlock::" . Digest::MD5::md5_hex($req->{'file'});
+cgi-bin/Apache/BML.pm:                         "*GET = *BMLCodeBlock::GET;",
+cgi-bin/Apache/BML.pm:                         "*POST = *BMLCodeBlock::POST;",
+cgi-bin/Apache/BML.pm:                         "*FORM = *BMLCodeBlock::FORM;",
+cgi-bin/Apache/BML.pm:    %BMLCodeBlock::GET = ();
+cgi-bin/Apache/BML.pm:    %BMLCodeBlock::POST = ();
+cgi-bin/Apache/BML.pm:    %BMLCodeBlock::FORM = ();  # whatever request method is
+cgi-bin/Apache/BML.pm:    my %input_target = ( GET  => [ \%BMLCodeBlock::GET  ],
+cgi-bin/Apache/BML.pm:                         POST => [ \%BMLCodeBlock::POST ], );
+cgi-bin/Apache/BML.pm:    push @{$input_target{$r->method}}, \%BMLCodeBlock::FORM;
+cgi-bin/Apache/BML.pm:    my $uselang = $BMLCodeBlock::GET{'uselang'};
+cgi-bin/Apache/BML.pm:    return \%BMLCodeBlock::GET;
+cgi-bin/Apache/BML.pm:    return \%BMLCodeBlock::POST;
+cgi-bin/Apache/BML.pm:    return \%BMLCodeBlock::FORM;
+cgi-bin/Apache/BML.pm:    my $form = \%BMLCodeBlock::FORM;
+cgi-bin/Apache/BML.pm:    foreach (sort grep { $_ ne "page" } keys %BMLCodeBlock::FORM)
+cgi-bin/Apache/BML.pm:        push @pair, (eurl($_) . "=" . eurl($BMLCodeBlock::FORM{$_}));
+cgi-bin/Apache/BML.pm:    while (my ($k, $v) = each %BMLCodeBlock::GET_POTENTIAL_XSS) {
+cgi-bin/Apache/BML.pm:        $BMLCodeBlock::GET{$k} = $v;
+cgi-bin/Apache/BML.pm:    %BMLCodeBlock::FORM = ();
+cgi-bin/Apache/BML.pm:    my %to_clean = ( GET  => \%BMLCodeBlock::GET ,
+cgi-bin/Apache/BML.pm:                     POST => \%BMLCodeBlock::POST, );
+cgi-bin/Apache/BML.pm:# provide %BML::ML & %BMLCodeBlock::ML support:
+cgi-bin/DW/Hooks/Community.pm:    $ret .= "<li>" . $promo->ljuser_display . ": " . BML::ml( '.promo.explain' ) . "</li>";
+cgi-bin/DW/Hooks/Community.pm:    $ret .= "<div style='clear:both'><h2>" . BML::ml( '.official.title', { sitename => $LJ::SITENAMESHORT } ) . "</h2>" . BML::ml( '.official.explain', { sitename => $LJ::SITENAMESHORT } ) . "<ul>";

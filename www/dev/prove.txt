@@ -1,0 +1,1172 @@
+dh-daily@li294-223:~$ prove dw/t/*.t
+dw/t/00-compile.t .................... Can't locate Test/Most.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.1 /usr/local/share/perl/5.10.1 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at dw/t/00-compile.t line 3.
+BEGIN failed--compilation aborted at dw/t/00-compile.t line 3.
+dw/t/00-compile.t .................... Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run
+dw/t/01-dw.t ......................... ok
+dw/t/assertions.t .................... ok
+dw/t/atom-post.t ..................... 9/?     # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'check_entry 1 - New Post'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'check_entry 1 - New Post'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+dw/t/atom-post.t ..................... 49/?     # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'check_entry 1 - Edited Post'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'check_entry 1 - Community entry'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'check_entry 1 - Community entry'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'check_entry 1 - Edited Post'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+# Looks like you failed 6 tests of 103.
+dw/t/atom-post.t ..................... Dubious, test returned 6 (wstat 1536, 0x600)
+Failed 6/103 subtests
+        (less 21 skipped subtests: 76 okay)
+dw/t/betafeatures.t .................. ok
+dw/t/birthday.t ...................... ok
+dw/t/caps.t .......................... ok
+dw/t/clean-comment.t ................. ok
+dw/t/clean-embed.t ................... ok
+dw/t/cleaner-forms.t ................. ok
+dw/t/cleaner-invalid.t ............... ok
+dw/t/cleaner-link.t .................. ok
+dw/t/cleaner-ljtags.t ................ ok
+dw/t/cleaner-subject.t ............... ok
+dw/t/cleaner-tables.t ................ ok
+dw/t/clean-event.t ................... ok
+dw/t/commafy.t ....................... ok
+dw/t/comment.t ....................... ok
+dw/t/console-allowopenproxy.t ........ ok
+dw/t/console-ban.t ................... ok
+dw/t/console-changecommunityadmin.t .. ok
+dw/t/console-changejournalstatus.t ... ok
+dw/t/console-changejournaltype.t ..... ok
+dw/t/console-comment.t ............... ok
+dw/t/console-community.t ............. ok
+dw/t/console-entry.t ................. ok
+dw/t/console-expungeuserpic.t ........ ok
+dw/t/console-faqcat.t ................ ok
+dw/t/console-findusercluster.t ....... ok
+dw/t/console-finduser.t .............. ok
+dw/t/console-getrelation.t ........... ok
+dw/t/console-infohistory.t ........... ok
+dw/t/console-moodthemes.t ............ ok
+dw/t/console-print.t ................. ok
+dw/t/console-priv.t .................. ok
+dw/t/console-reset.t ................. ok
+dw/t/console-setbadpassword.t ........ ok
+dw/t/console-set.t ................... ok
+dw/t/console-suspend.t ............... ok
+dw/t/console-syndicated.t ............ 1/10
+#   Failed test at dw/t/console-syndicated.t line 54.
+#          got: 'success: Merged t_rwsmc6ernsk7s to t_so6h4cg1bjvqc using URL: http://www.daily.hack.dreamwidth.net/feed.rss#2.'
+#     expected: 'error: Unable to merge feeds. Too many users are watching the feed 't_rwsmc6ernsk7s'. We only allow merges for feeds with at most 1 watchers.'
+
+#   Failed test at dw/t/console-syndicated.t line 58.
+#          got: 'error: Invalid user: 't_rwsmc6ernsk7s' (statusvis is R, already merged?)'
+#     expected: 'success: Merged t_rwsmc6ernsk7s to t_so6h4cg1bjvqc using URL: http://www.daily.hack.dreamwidth.net/feed.rss#2.'
+
+#   Failed test '3 watchers for t_so6h4cg1bjvqc'
+#   at dw/t/console-syndicated.t line 63.
+#          got: '0'
+#     expected: '3'
+# Looks like you failed 3 tests of 10.
+dw/t/console-syndicated.t ............ Dubious, test returned 3 (wstat 768, 0x300)
+Failed 3/10 subtests
+dw/t/console-sysban.t ................ ok
+dw/t/console-tags.t .................. ok
+dw/t/content-filters.t ............... ok
+dw/t/cprod.t ......................... skipped: @LJ::CPROD_PROMOS undefined.
+dw/t/create-url.t ....................         # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+dw/t/create-url.t .................... 1/19
+#   Failed test 'http://www.example.com/'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'http://www.example.com/?bar=baz'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'http://www.example.com/?bar=baz'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'http://www.example.com/?bar=baz&s2id=5&format=light&style=site'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'http://www.example.com/?bar=baz&s2id=5&format=light&style=site'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'http://www.example.com/?bar=baz&s2id=5&format=light&style=site&some=other&cruft=1'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'https://www.example.com/'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'https://www.example.com/'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'https://www.example.com/'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'http://www.example.com/'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'https://www.example.com/'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'https://www.example.com/'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'http://www.example.com/'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'http://www.example.com/meow'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'http://www.example.com/meow'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'http://www.example.com/?bar=baz&s2id=5&format=light&style=site&ping=pong&no=1'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'http://www.example.com/?bar=baz&s2id=5&format=light&style=site&ping=pong&no=1'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'http://www.example.com/?bar=baz&s2id=5&format=light&style=site&ping=pong&no=1'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'args'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 5.
+
+#   Failed test 'http://www.example.com/?format=light'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+# Looks like you failed 19 tests of 19.
+dw/t/create-url.t .................... Dubious, test returned 19 (wstat 4864, 0x1300)
+Failed 19/19 subtests
+dw/t/dev-setup.t ..................... ok
+dw/t/directorysearch-extra.t ......... skipped: Need LJ::UserSearch module.
+dw/t/directorysearch.t ............... skipped: Need LJ::UserSearch module.
+dw/t/draftset.t ...................... ok
+dw/t/emailpost.t ..................... 1/13 # Posted to: http://t-eufs92lobz7wh.daily.hack.dreamwidth.net/267.html
+dw/t/emailpost.t ..................... ok
+dw/t/embed-whitelist.t ...............     # Tests were run but no plan was declared and done_testing() was not seen.
+dw/t/embed-whitelist.t ............... 1/10
+#   Failed test 'bad embed url data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=='
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'good embed url http://www.youtube.com/embed/123457890abc'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'bad embed url data://www.youtube.com/embed/123457890abc'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'good embed url http://www.youtube.com/embed/x1xx2xxxxxX'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'good embed url https://www.youtube.com/embed/x1xx2xxxxxX'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'good embed url http://www.youtube-nocookie.com/embed/x1xx2xxxxxX'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'good embed url https://www.youtube-nocookie.com/embed/x1xx2xxxxxX'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'good embed url http://www.youtube.com/embed/x1xx2xxxxxX?somearg=1&otherarg=2'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'bad embed url http://www.youtube.com/notreallyembed/x1xx2xxxxxX'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'bad embed url http://www.youtube.com/embed/x1xx2xxxxxX/butnotreally'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+# Looks like you failed 10 tests of 10.
+dw/t/embed-whitelist.t ............... Dubious, test returned 10 (wstat 2560, 0xa00)
+Failed 10/10 subtests
+dw/t/entrycomment-create.t ........... ok
+dw/t/errors.t ........................ ok
+dw/t/esn-duplicatesubscriptions.t .... ok
+dw/t/esn-end2end.t ................... ok
+dw/t/esn-findsubscription.t .......... ok
+dw/t/esn-journalnewcomment.t ......... ok
+dw/t/esn.t ........................... 1/15
+#   Failed test 'One subscription'
+#   at dw/t/esn.t line 70.
+
+#   Failed test 'Subscriptions match'
+#   at dw/t/esn.t line 77.
+#     Structures begin differing at:
+#          $got = undef
+#     $expected = LJ::Subscription=HASH(0xc2a3888)
+# Looks like you failed 2 tests of 15.
+dw/t/esn.t ........................... Dubious, test returned 2 (wstat 512, 0x200)
+Failed 2/15 subtests
+dw/t/external-user.t ................. ok
+dw/t/fakememcache.t .................. ok
+dw/t/faq.t ........................... ok
+dw/t/feed-atom.t ..................... ok
+dw/t/htmltrim.t ...................... ok
+dw/t/jabber-presence.t ............... 1/?     # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'del Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'del Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'delall'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'delobj Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'delobj Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'delobj_all Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'del Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'del Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'delall'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'delobj Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'delobj Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'delobj_all Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'del Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'del Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'delall'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'delobj Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'delobj Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Another Resource - another client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'add Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'load Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test 'delobj_all Resource - a client'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+# Looks like you failed 69 tests of 72.
+dw/t/jabber-presence.t ............... Dubious, test returned 69 (wstat 17664, 0x4500)
+Failed 69/72 subtests
+dw/t/langdatfile.t ................... ok
+dw/t/location.t ...................... ok
+dw/t/log-items.t ..................... 3/5 Invalid type 'Q' in pack at /dreamhack/home/7000-daily/dw/cgi-bin/DW/User/Edges/WatchTrust/Loader.pm line 277.
+# Looks like you planned 5 tests but ran 3.
+# Looks like your test exited with 255 just after 3.
+dw/t/log-items.t ..................... Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 2/5 subtests
+        (less 2 skipped subtests: 1 okay)
+dw/t/notificationinbox.t ............. ok
+dw/t/notificationmethod-email.t ...... ok
+dw/t/notificationmethod-inbox.t ...... ok
+dw/t/paid-time.t ..................... ok
+dw/t/parsefeed-atom-link2.t .......... ok
+dw/t/parsefeed-atom-link3.t .......... ok
+dw/t/parsefeed-atom-link.t ........... ok
+dw/t/parsefeed-atom-types.t .......... skipped: Fix this test!
+dw/t/parsefeed-authors.t ............. ok
+dw/t/privs.t ......................... ok
+dw/t/protocol.t ...................... 1/222 Invalid type 'Q' in pack at /dreamhack/home/7000-daily/dw/cgi-bin/DW/User/Edges/WatchTrust/Loader.pm line 277.
+# Looks like you planned 222 tests but ran 12.
+# Looks like your test exited with 255 just after 12.
+dw/t/protocol.t ...................... Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 210/222 subtests
+dw/t/proto-post-edit-roundtrip.t ..... ok
+dw/t/referer.t ....................... ok
+dw/t/rename.t ........................ 1/152
+#   Failed test 'User has no watcher.'
+#   at dw/t/rename.t line 171.
+
+#   Failed test 'User does not watch anyone.'
+#   at dw/t/rename.t line 189.
+
+#   Failed test 'User does not watch a comm.'
+#   at dw/t/rename.t line 207.
+
+#   Failed test 'User has no watcher.'
+#   at dw/t/rename.t line 210.
+
+#   Failed test 'User does not watch a comm.'
+#   at dw/t/rename.t line 214.
+dw/t/rename.t ........................ 150/152 # Looks like you failed 5 tests of 152.
+dw/t/rename.t ........................ Dubious, test returned 5 (wstat 1280, 0x500)
+Failed 5/152 subtests
+dw/t/routing-errors.t ................ ok
+dw/t/routing-formats.t ............... 1/13         # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test all json (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test all json (ssl)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test all json (user)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test all format (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test all format (ssl)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test all format (user)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test app implied_format (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test app implied_format (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test app implied_format (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+# Looks like you failed 9 tests of 13.
+dw/t/routing-formats.t ............... Dubious, test returned 9 (wstat 2304, 0x900)
+Failed 9/13 subtests
+dw/t/routing-indexes.t ............... 1/6         # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/xx3/'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/xx3/index'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+
+#   Failed test '/xx3'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/index'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+# Looks like you failed 5 tests of 6.
+dw/t/routing-indexes.t ............... Dubious, test returned 5 (wstat 1280, 0x500)
+Failed 5/6 subtests
+dw/t/routing-methods.t ............... ok
+dw/t/routing-roles-regex.t ........... 1/37         # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/app (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/app (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/ssl (ssl)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/ssl (ssl)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/user (user)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/user (user)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/multi (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/multi (ssl)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/multi (user)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/multi (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/multi (ssl)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/multi (user)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/all (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/all (ssl)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/all (user)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/all (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/all (ssl)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/all (user)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/app_implicit (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/r/app_implicit (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+# Looks like you failed 20 tests of 37.
+dw/t/routing-roles-regex.t ........... Dubious, test returned 20 (wstat 5120, 0x1400)
+Failed 20/37 subtests
+dw/t/routing-roles-string.t .......... 1/37         # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test app (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test app (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test ssl (ssl)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test ssl (ssl)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test user (user)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test user (user)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test multi (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test multi (ssl)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test multi (user)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test multi (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test multi (ssl)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test multi (user)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test all (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test all (ssl)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test all (user)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test all (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test all (ssl)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test all (user)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test app_implicit (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+        # Tests were run but no plan was declared and done_testing() was not seen.
+
+    #   Failed test 'handler call'
+    #   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Looks like you failed 1 test of 3.
+
+#   Failed test '/test app_implicit (app)'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+# Looks like you failed 20 tests of 37.
+dw/t/routing-roles-string.t .......... Dubious, test returned 20 (wstat 5120, 0x1400)
+Failed 20/37 subtests
+dw/t/routing-table.t ................. ok
+dw/t/settings.t ...................... ok
+dw/t/subscription-flags.t ............ ok
+dw/t/subscription-nested.t ...........     # Tests were run but no plan was declared and done_testing() was not seen.
+dw/t/subscription-nested.t ........... 1/?
+#   Failed test 'checking thread subscription'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+    # Tests were run but no plan was declared and done_testing() was not seen.
+dw/t/subscription-nested.t ........... 2/?
+#   Failed test 'checking thread subscription'
+#   at /usr/share/perl5/Test/Builder.pm line 229.
+# Looks like you failed 2 tests of 2.
+dw/t/subscription-nested.t ........... Dubious, test returned 2 (wstat 512, 0x200)
+Failed 2/2 subtests
+dw/t/subscription-pending.t .......... ok
+dw/t/synsuck.t ....................... ok
+dw/t/talklib-mail-migrate.t .......... ok
+dw/t/template-plugin-formhtml.t ...... ok
+dw/t/textutil.t ...................... ok
+dw/t/typemap.t ....................... ok
+dw/t/uniqcookie.t .................... ok
+dw/t/user-infoshow-migrate.t ......... ok
+dw/t/userloading.t ................... ok
+dw/t/usermoves.t ..................... skipped: Less than two clusters.
+dw/t/userpics.t ...................... ok
+dw/t/use-strict.t .................... Could not open bin/bootstrap.pl: No such file or directory at dw/t/use-strict.t line 23.
+# Looks like your test exited with 2 before it could output anything.
+dw/t/use-strict.t .................... Dubious, test returned 2 (wstat 512, 0x200)
+Failed 691/691 subtests
+dw/t/utf8-convert.t .................. ok
+dw/t/wtf.t ........................... 1/67 Invalid type 'Q' in pack at /dreamhack/home/7000-daily/dw/cgi-bin/DW/User/Edges/WatchTrust/Loader.pm line 277.
+# Looks like you planned 67 tests but ran 5.
+# Looks like your test exited with 255 just after 5.
+dw/t/wtf.t ........................... Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 62/67 subtests
+
+Test Summary Report
+-------------------
+dw/t/00-compile.t                  (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+dw/t/atom-post.t                   (Wstat: 1536 Tests: 103 Failed: 6)
+  Failed tests:  30, 43, 51, 80, 90, 93
+  Non-zero exit status: 6
+dw/t/console-syndicated.t          (Wstat: 768 Tests: 10 Failed: 3)
+  Failed tests:  6-7, 10
+  Non-zero exit status: 3
+dw/t/create-url.t                  (Wstat: 4864 Tests: 19 Failed: 19)
+  Failed tests:  1-19
+  Non-zero exit status: 19
+dw/t/embed-whitelist.t             (Wstat: 2560 Tests: 10 Failed: 10)
+  Failed tests:  1-10
+  Non-zero exit status: 10
+dw/t/esn.t                         (Wstat: 512 Tests: 15 Failed: 2)
+  Failed tests:  14-15
+  Non-zero exit status: 2
+dw/t/jabber-presence.t             (Wstat: 17664 Tests: 72 Failed: 69)
+  Failed tests:  2-24, 26-48, 50-72
+  Non-zero exit status: 69
+dw/t/log-items.t                   (Wstat: 65280 Tests: 3 Failed: 0)
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 5 tests but ran 3.
+dw/t/protocol.t                    (Wstat: 65280 Tests: 12 Failed: 0)
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 222 tests but ran 12.
+dw/t/rename.t                      (Wstat: 1280 Tests: 152 Failed: 5)
+  Failed tests:  37, 49, 61, 63, 67
+  Non-zero exit status: 5
+dw/t/routing-formats.t             (Wstat: 2304 Tests: 13 Failed: 9)
+  Failed tests:  2-7, 10, 12-13
+  Non-zero exit status: 9
+dw/t/routing-indexes.t             (Wstat: 1280 Tests: 6 Failed: 5)
+  Failed tests:  2-6
+  Non-zero exit status: 5
+dw/t/routing-roles-regex.t         (Wstat: 5120 Tests: 37 Failed: 20)
+  Failed tests:  2, 5, 9, 12, 16, 19-32, 35
+  Non-zero exit status: 20
+dw/t/routing-roles-string.t        (Wstat: 5120 Tests: 37 Failed: 20)
+  Failed tests:  2, 5, 9, 12, 16, 19-32, 35
+  Non-zero exit status: 20
+dw/t/subscription-nested.t         (Wstat: 512 Tests: 2 Failed: 2)
+  Failed tests:  1-2
+  Non-zero exit status: 2
+dw/t/use-strict.t                  (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: Bad plan.  You planned 691 tests but ran 0.
+dw/t/wtf.t                         (Wstat: 65280 Tests: 5 Failed: 0)
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 67 tests but ran 5.
+Files=105, Tests=2641, 146 wallclock secs ( 0.96 usr  0.58 sys + 112.16 cusr 11.04 csys = 124.74 CPU)
+Result: FAIL

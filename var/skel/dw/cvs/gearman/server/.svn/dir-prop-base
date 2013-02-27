@@ -1,0 +1,13 @@
+K 10
+svn:ignore
+V 81
+Makefile
+MANIFEST.bak
+pm_to_blib
+build-stamp
+install-stamp
+.shipit
+META.yml
+blib
+
+END

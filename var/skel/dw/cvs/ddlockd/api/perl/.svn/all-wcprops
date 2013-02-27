@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/ddlockd/!svn/ver/40/trunk/api/perl
+END
+testlock.pl
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ddlockd/!svn/ver/14/trunk/api/perl/testlock.pl
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ddlockd/!svn/ver/7/trunk/api/perl/MANIFEST
+END
+stresslock.pl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ddlockd/!svn/ver/16/trunk/api/perl/stresslock.pl
+END
+Makefile.PL
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ddlockd/!svn/ver/15/trunk/api/perl/Makefile.PL
+END
+DDLockClient.pm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ddlockd/!svn/ver/40/trunk/api/perl/DDLockClient.pm
+END
+MANIFEST.SKIP
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ddlockd/!svn/ver/7/trunk/api/perl/MANIFEST.SKIP
+END

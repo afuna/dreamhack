@@ -1,0 +1,20 @@
+K 17
+post-commit-email
+V 68
+cvs-commits@livejournal.com,ask@develooper.com,kris@bbridgetech.com
+
+K 9
+svk:merge
+V 167
+02e31fea-a713-0410-9bb5-81a53d0f95f7:/gearman-trunk:4541
+29fdfa62-1810-0410-aa4d-8a65f0f8e879:/gearman-trunk:176
+9d6b54d1-720f-0410-9107-a239f4b24bb3:/gearman-trunk:88
+K 10
+svn:ignore
+V 26
+Makefile
+blib
+pm_to_blib
+
+
+END

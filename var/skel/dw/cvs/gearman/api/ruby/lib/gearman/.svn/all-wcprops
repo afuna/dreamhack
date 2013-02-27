@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/gearman/!svn/ver/366/trunk/api/ruby/lib/gearman
+END
+util.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/gearman/!svn/ver/365/trunk/api/ruby/lib/gearman/util.rb
+END
+client.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gearman/!svn/ver/364/trunk/api/ruby/lib/gearman/client.rb
+END
+taskset.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gearman/!svn/ver/364/trunk/api/ruby/lib/gearman/taskset.rb
+END
+task.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/gearman/!svn/ver/364/trunk/api/ruby/lib/gearman/task.rb
+END
+testlib.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gearman/!svn/ver/366/trunk/api/ruby/lib/gearman/testlib.rb
+END
+worker.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gearman/!svn/ver/279/trunk/api/ruby/lib/gearman/worker.rb
+END

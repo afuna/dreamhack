@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/memcached/!svn/ver/628/trunk/server/scripts
+END
+memcached-tool
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/memcached/!svn/ver/628/trunk/server/scripts/memcached-tool
+END
+start-memcached
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/memcached/!svn/ver/257/trunk/server/scripts/start-memcached
+END
+memcached-init
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/memcached/!svn/ver/257/trunk/server/scripts/memcached-init
+END
+memcached.sysv
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/memcached/!svn/ver/578/trunk/server/scripts/memcached.sysv
+END

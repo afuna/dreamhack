@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/LJ-UserSearch/!svn/ver/21/trunk
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/LJ-UserSearch/!svn/ver/1/trunk/MANIFEST
+END
+Makefile.PL
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/LJ-UserSearch/!svn/ver/1/trunk/Makefile.PL
+END
+install-into-ljhome
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/LJ-UserSearch/!svn/ver/21/trunk/install-into-ljhome
+END
+ppport.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/LJ-UserSearch/!svn/ver/1/trunk/ppport.h
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/LJ-UserSearch/!svn/ver/1/trunk/README
+END
+UserSearch.xs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/LJ-UserSearch/!svn/ver/19/trunk/UserSearch.xs
+END

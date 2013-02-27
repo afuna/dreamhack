@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/memcached/!svn/ver/156/trunk/api/java
+END
+PORTABILITY.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/memcached/!svn/ver/143/trunk/api/java/PORTABILITY.txt
+END
+memcachetest.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/memcached/!svn/ver/143/trunk/api/java/memcachetest.java
+END
+TODO.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/memcached/!svn/ver/156/trunk/api/java/TODO.txt
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/memcached/!svn/ver/156/trunk/api/java/CHANGELOG.txt
+END
+dist.pl
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/memcached/!svn/ver/143/trunk/api/java/dist.pl
+END

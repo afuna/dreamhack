@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/gearman/!svn/ver/381/trunk
+END
+TODO.txt
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/gearman/!svn/ver/362/trunk/TODO.txt
+END
+Makefile.PL
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/gearman/!svn/ver/92/trunk/Makefile.PL
+END
+Makefile.debian
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gearman/!svn/ver/69/trunk/Makefile.debian
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/ddlockd/!svn/ver/39/trunk/api/perl/t
+END
+01_all.t
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ddlockd/!svn/ver/38/trunk/api/perl/t/01_all.t
+END
+02_error.t
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ddlockd/!svn/ver/39/trunk/api/perl/t/02_error.t
+END
+00_require.t
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ddlockd/!svn/ver/7/trunk/api/perl/t/00_require.t
+END

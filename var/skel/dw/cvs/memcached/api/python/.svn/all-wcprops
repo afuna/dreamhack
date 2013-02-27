@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/memcached/!svn/ver/88/trunk/api/python
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/memcached/!svn/ver/83/trunk/api/python/MANIFEST
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/memcached/!svn/ver/88/trunk/api/python/ChangeLog
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/memcached/!svn/ver/84/trunk/api/python/setup.py
+END
+memcache.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/memcached/!svn/ver/88/trunk/api/python/memcache.py
+END
+PKG-INFO
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/memcached/!svn/ver/83/trunk/api/python/PKG-INFO
+END
+DISTNOTES
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/memcached/!svn/ver/83/trunk/api/python/DISTNOTES
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gearman/!svn/ver/367/trunk/api/python/lib
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/gearman/!svn/ver/310/trunk/api/python/lib/AUTHORS
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/gearman/!svn/ver/309/trunk/api/python/lib/setup.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/gearman/!svn/ver/323/trunk/api/python/lib/tests.py
+END

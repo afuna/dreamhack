@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/gearman/!svn/ver/367/trunk/api/python/lib/gearman
+END
+worker.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/gearman/!svn/ver/343/trunk/api/python/lib/gearman/worker.py
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gearman/!svn/ver/297/trunk/api/python/lib/gearman/util.py
+END
+client.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/gearman/!svn/ver/367/trunk/api/python/lib/gearman/client.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/gearman/!svn/ver/314/trunk/api/python/lib/gearman/__init__.py
+END
+connection.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gearman/!svn/ver/367/trunk/api/python/lib/gearman/connection.py
+END
+task.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gearman/!svn/ver/323/trunk/api/python/lib/gearman/task.py
+END
+compat.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/gearman/!svn/ver/307/trunk/api/python/lib/gearman/compat.py
+END

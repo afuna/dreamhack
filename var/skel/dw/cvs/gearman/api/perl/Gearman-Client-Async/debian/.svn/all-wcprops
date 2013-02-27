@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gearman/!svn/ver/360/trunk/api/perl/Gearman-Client-Async/debian
+END
+control
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/gearman/!svn/ver/360/trunk/api/perl/Gearman-Client-Async/debian/control
+END
+compat
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/gearman/!svn/ver/360/trunk/api/perl/Gearman-Client-Async/debian/compat
+END
+changelog
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/gearman/!svn/ver/360/trunk/api/perl/Gearman-Client-Async/debian/changelog
+END
+copyright
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/gearman/!svn/ver/360/trunk/api/perl/Gearman-Client-Async/debian/copyright
+END
+rules
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/gearman/!svn/ver/360/trunk/api/perl/Gearman-Client-Async/debian/rules
+END

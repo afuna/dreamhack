@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/gearman/!svn/ver/359/trunk/api/perl/Gearman/debian
+END
+control
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gearman/!svn/ver/359/trunk/api/perl/Gearman/debian/control
+END
+compat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gearman/!svn/ver/359/trunk/api/perl/Gearman/debian/compat
+END
+changelog
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gearman/!svn/ver/359/trunk/api/perl/Gearman/debian/changelog
+END
+copyright
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gearman/!svn/ver/359/trunk/api/perl/Gearman/debian/copyright
+END
+rules
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/gearman/!svn/ver/359/trunk/api/perl/Gearman/debian/rules
+END

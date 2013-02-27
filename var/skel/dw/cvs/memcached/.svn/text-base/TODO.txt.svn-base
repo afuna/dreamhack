@@ -1,0 +1,12 @@
+* Cache-Memcached and Devel::Profile
+  http://rt.livejournal.org/Ticket/Display.html?id=319
+
+* Re: Cache::Memcached fix for problems with sockets used as string (fwd)
+  http://rt.livejournal.org/Ticket/Display.html?id=339
+
+* sendfile from memcached?
+  http://rt.livejournal.org/Ticket/Display.html?id=1230
+
+* possible linux optimizations
+  http://rt.livejournal.org/Ticket/Display.html?id=1231
+

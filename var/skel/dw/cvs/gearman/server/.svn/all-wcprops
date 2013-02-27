@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/gearman/!svn/ver/378/trunk/server
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gearman/!svn/ver/348/trunk/server/MANIFEST
+END
+Gearmand.spec
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/gearman/!svn/ver/349/trunk/server/Gearmand.spec
+END
+Makefile.PL
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/gearman/!svn/ver/227/trunk/server/Makefile.PL
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gearman/!svn/ver/347/trunk/server/CHANGES
+END
+MANIFEST.SKIP
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/gearman/!svn/ver/269/trunk/server/MANIFEST.SKIP
+END
+.shipit
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gearman/!svn/ver/234/trunk/server/.shipit
+END
+gearmand
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/gearman/!svn/ver/232/trunk/server/gearmand
+END

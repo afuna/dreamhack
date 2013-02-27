@@ -1,0 +1,16 @@
+K 10
+svn:ignore
+V 91
+const-xs.inc
+const-c.inc
+GetParserXS.c
+*.diff
+notes.txt
+*blib
+*.bs
+Makefile
+Makefile.old
+
+
+
+END

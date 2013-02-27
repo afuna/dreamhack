@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/memcached/!svn/ver/814/trunk/api/perl/t
+END
+100_flush_bug.t
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/memcached/!svn/ver/814/trunk/api/perl/t/100_flush_bug.t
+END
+03_stats.t
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/memcached/!svn/ver/605/trunk/api/perl/t/03_stats.t
+END
+05_reconnect_timeout.t
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/memcached/!svn/ver/805/trunk/api/perl/t/05_reconnect_timeout.t
+END
+04_noreply.t
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/memcached/!svn/ver/714/trunk/api/perl/t/04_noreply.t
+END
+01_use.t
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/memcached/!svn/ver/605/trunk/api/perl/t/01_use.t
+END
+02_keys.t
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/memcached/!svn/ver/605/trunk/api/perl/t/02_keys.t
+END

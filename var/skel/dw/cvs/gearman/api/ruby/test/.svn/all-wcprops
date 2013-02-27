@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/gearman/!svn/ver/366/trunk/api/ruby/test
+END
+client.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/gearman/!svn/ver/366/trunk/api/ruby/test/client.rb
+END
+mock_worker.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/gearman/!svn/ver/366/trunk/api/ruby/test/mock_worker.rb
+END
+mock_client.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/gearman/!svn/ver/366/trunk/api/ruby/test/mock_client.rb
+END
+worker.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/gearman/!svn/ver/366/trunk/api/ruby/test/worker.rb
+END

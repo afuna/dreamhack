@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/memcached/!svn/ver/788/trunk/server
+END
+stats.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/memcached/!svn/ver/591/trunk/server/stats.c
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/memcached/!svn/ver/257/trunk/server/LICENSE
+END
+daemon.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/memcached/!svn/ver/587/trunk/server/daemon.c
+END
+stats.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/memcached/!svn/ver/512/trunk/server/stats.h
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/memcached/!svn/ver/257/trunk/server/AUTHORS
+END
+slabs.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/memcached/!svn/ver/739/trunk/server/slabs.c
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/memcached/!svn/ver/783/trunk/server/ChangeLog
+END
+memcached.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/memcached/!svn/ver/788/trunk/server/memcached.c
+END
+thread.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/memcached/!svn/ver/739/trunk/server/thread.c
+END
+assoc.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/memcached/!svn/ver/785/trunk/server/assoc.c
+END
+slabs.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/memcached/!svn/ver/739/trunk/server/slabs.h
+END
+memcached.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/memcached/!svn/ver/739/trunk/server/memcached.h
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/memcached/!svn/ver/513/trunk/server/README
+END
+assoc.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/memcached/!svn/ver/509/trunk/server/assoc.h
+END
+memcached.spec
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/memcached/!svn/ver/741/trunk/server/memcached.spec
+END
+BUILD
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/memcached/!svn/ver/257/trunk/server/BUILD
+END
+items.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/memcached/!svn/ver/740/trunk/server/items.c
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/memcached/!svn/ver/741/trunk/server/configure.ac
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/memcached/!svn/ver/320/trunk/server/TODO
+END
+items.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/memcached/!svn/ver/596/trunk/server/items.h
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/memcached/!svn/ver/257/trunk/server/COPYING
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/memcached/!svn/ver/641/trunk/server/Makefile.am
+END
+autogen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/memcached/!svn/ver/550/trunk/server/autogen.sh
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/memcached/!svn/ver/257/trunk/server/NEWS
+END
+.shipit
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/memcached/!svn/ver/661/trunk/server/.shipit
+END
